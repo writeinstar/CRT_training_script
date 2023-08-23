@@ -22,7 +22,6 @@ Access Yaml Variables
     Log        ${yaml_dict}[key_1]
 
 Access Dynamic Variables
-    # Log   ${USER}
     Log   ${RANDOM_INT}
     Log   ${CURRENT_TIME}
     Log   ${AFTERNOON}
@@ -31,7 +30,7 @@ Access Dynamic Variables
 
 Use variable file with argument value dev
     [Tags]         include-example
-    Import Variables	${CURDIR}/vars.py    dev
+    Import Variables	${CURDIR}/DynamicVariables.py    dev
     Log Variables
     Log            ${scalar}        level=WARN
     Log            ${list}    level=WARN
