@@ -29,26 +29,24 @@ Access Dynamic Variables
     Log   ${AREA2}
 
 Use variable file with argument value dev
-    [Tags]         include-example
     Import Variables	${CURDIR}/DynamicVariables.py    dev
     Log Variables
-    Log            ${scalar}        level=WARN
-    Log            ${list}    level=WARN
+    Log            ${scalar}
+    Log            ${list}
     
     ${the_var}=    Get Variable Value    ${extra}
     IF    "${the_var}" != "None"
-        Log            ${extra}         level=WARN
+        Log            ${extra}
     END
 
 Use variable file with argument value uat
-    [Tags]         include-example
-    Import Variables	${CURDIR}/vars.py    uat
+    Import Variables	${CURDIR}/DynamicVariables.py    uat
     Log Variables
-    Log            ${scalar}        level=WARN
-    Log            ${list}    level=WARN
+    Log            ${scalar}
+    Log            ${list}
     
     ${the_var}=    Get Variable Value    ${extra}
 
     IF    "${the_var}" != "None"
-        Log            ${extra}         level=WARN
+        Log            ${extra}
     END
