@@ -30,10 +30,8 @@ Access Dynamic Variables
 
 Use variable file with argument value dev
     Import Variables	${CURDIR}/DynamicVariables.py    dev
-    Log Variables
     Log            ${scalar}
     Log            ${list}
-    
     ${the_var}=    Get Variable Value    ${extra}
     IF    "${the_var}" != "None"
         Log            ${extra}
@@ -41,12 +39,9 @@ Use variable file with argument value dev
 
 Use variable file with argument value uat
     Import Variables	${CURDIR}/DynamicVariables.py    uat
-    Log Variables
     Log            ${scalar}
     Log            ${list}
-    
     ${the_var}=    Get Variable Value    ${extra}
-
     IF    "${the_var}" != "None"
         Log            ${extra}
     END
