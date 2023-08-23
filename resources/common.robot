@@ -32,7 +32,7 @@ Login
     TypeText                    Password                    ${password}
     ClickText                   Log In
     
-    # Exercise 8
+    # Uncommment with Exercise 8
 
     # MFA is only required for unknown devices or browsers, once verified it is not asked for. 
     # To enforce MFA in your SF trial, Setup -> Identity -> Identity Verification -> Require MFA for all direct UI logins to your Salesforce org
