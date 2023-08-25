@@ -66,8 +66,7 @@ The purpose of this exercise is to create your own Salesforce Trial Org. with th
 
 3. At line 13, enter your email address.
 
-> **Note:** If you **already have a salesforce account registered to your email**, try and add +1 to your email address like youremailaddress+1@domain.com**
-> **Note:** If you **don't receive emails from Salesforce**, your mail server may block emails used with +1**
+> **Note:** If you **already have a salesforce account registered to your email**, try and add +1 to your email address like youremailaddress+1@domain.com** and if you **don't receive emails from Salesforce**, your mail server may block emails used with +1**
 
 ## Delete a file
 
