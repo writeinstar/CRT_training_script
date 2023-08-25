@@ -23,43 +23,46 @@ The purpose of this exercise is to create your own Salesforce Trial Org. with th
 
 2. Copy the following sample test file. [create-sf-trail](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/aa62a80164107535e1e9bbcacb63175abcd70bbb/exercise-4-setup-sf-trail/create-sf-trail.robot)
 
-    \*\*\* Settings \*\*\*
-    Documentation               Create a new Salesforce Trail
-    Library                     QWeb
-    Library                     DateTime
-    Library                     String
-    Suite Setup                 Open Browser                about:blank           chrome
-    Suite Teardown              Close All Browsers
+		*** Settings ***
 
-    \*\*\* Variables \*\*\*
-    ${email}                    youremailaddress
+		Documentation               Create a new Salesforce Trail
+		Library                     QWeb
+		Library                     DateTime
+		Library                     String
+		Suite Setup                 Open Browser                about:blank           chrome
+		Suite Teardown              Close All Browsers
 
-	\*\*\* Test Cases \*\*\*
-	Create Salesforce Trial Org
-		GoTo                    https://www.salesforce.com/form/signup/freetrial-sales-pe/
-		VerifyText              Start your free sales trial
+		*** Variables ***
 
-		Evaluate                random.seed()               random
-		${exampleFirstName}=    Convert To String           guest1
-		${randomString}=        Generate Random String      length=3-5            chars=0123456789
-		${FirstName}=           Format String               {}{}                  ${exampleFirstName}    ${randomString}
+		${email}                    youremailaddress
 
+		*** Test Cases ***
 
-		TypeText                First name                  ${FirstName}
-		TypeText                Last name                   user
-		TypeText                Job title                   Learner
-		ClickText               Next
+		Create Salesforce Trial Org
+			GoTo                    https://www.salesforce.com/form/signup/freetrial-sales-pe/
+			VerifyText              Start your free sales trial
 
-		DropDown                Employees                   21 - 200 employees
-		TypeText                Company                     xyz
-		ClickText               Next
+			Evaluate                random.seed()               random
+			${exampleFirstName}=    Convert To String           guest1
+			${randomString}=        Generate Random String      length=3-5            chars=0123456789
+			${FirstName}=           Format String               {}{}                  ${exampleFirstName}    ${randomString}
 
 
-		TypeText                Phone                       9999999999
-		TypeText                Email                       ${email}
-		ClickElement           //div[@class\="checkbox-ui"]                   
+			TypeText                First name                  ${FirstName}
+			TypeText                Last name                   user
+			TypeText                Job title                   Learner
+			ClickText               Next
 
-		ClickText               Submit
+			DropDown                Employees                   21 - 200 employees
+			TypeText                Company                     xyz
+			ClickText               Next
+
+
+			TypeText                Phone                       9999999999
+			TypeText                Email                       ${email}
+			ClickElement           //div[@class\="checkbox-ui"]                   
+
+			ClickText               Submit
 
 3. At line 13, enter your email address.
 
