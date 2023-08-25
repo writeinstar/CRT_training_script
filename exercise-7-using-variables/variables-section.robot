@@ -4,7 +4,7 @@ ${my_var}     my_value
 &{my_dict}    name=my_value1    password=my_value2
 
 *** Test Cases ***
-Test Case 1
+Variables Section
     Log    ${my_var}
     Log    ${my_list}
     Log    ${my_dict}
