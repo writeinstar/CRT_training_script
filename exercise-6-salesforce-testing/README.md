@@ -1,4 +1,4 @@
-# Welcome to Exercise 6 - Salesforce Testing!
+# Exercise 6 - Salesforce Testing!
 
 Welcome to **Exercise 6**. Let's create our first Salesforce tests!
 
