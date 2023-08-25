@@ -80,6 +80,14 @@ The purpose of this exercise is to learn how to create and use variables in mult
 
 # Set variables using keywords
 
+1. Open empty suite **exercise 7 using variables**
+
+2. Open folder in the root named **exercise-7-using-variables**
+
+3. In this foler, create file set-variables-keywords.robot and copy the contents from here [set-variables-keywords.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/6b626388ef38d2553fd15d7392d3357d63a78073/exercise-7-using-variables/set-variables-keywords.robot)
+
+4. Click **Live Test** button displayed just above the test case names and learn about **scope of variables** using different keywords.
+
 # Files Used
 
 ## exercise-6-salesforce-testing/salesforce.robot
