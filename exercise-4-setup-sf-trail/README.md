@@ -1,24 +1,75 @@
-# Welcome to Exercise 4 - Salesforce Trial Org Setup!
+# Welcome to Exercise 4 - Salesforce Trial Org. Setup!
 
-Welcome to **Exercise 4**. Let's create a **Salesforce Trial Org**! Which will be our system under tests, used for our exercises throughout this training.
+Welcome to **Exercise 4**. Let's create a **Salesforce Trial Org.**! Which will be our system under tests, used for our exercises throughout this training.
 
 
 # Purpose
 
-The purpose of this exercise is to create your own Salesforce Trial Org with the help of CRT.
+The purpose of this exercise is to create your own Salesforce Trial Org. with the help of CRT.
 
 # Prerequisite(s)
 
-- Access to a Copado Robotic Testing Organisation is required
-- Make sure you have a CRT project  robot 
+- Access to a Copado Robotic Testing Organization is required
+- Access to a Project
+- Robot created
 
-## Switch to another file
+# Learning Objectives
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+- Learn how to requests a Salesforce Trial Org. (automatically with CRT)
 
-## Rename a file
+# Learn how to requests a Salesforce Trial Org.
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+1. Create a new empty suite.
+
+2. Copy the following sample test file. [create-sf-trail](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/aa62a80164107535e1e9bbcacb63175abcd70bbb/exercise-4-setup-sf-trail/create-sf-trail.robot)
+
+    *** Settings ***
+
+    Documentation               Create a new Salesforce Trail
+    Library                     QWeb
+    Library                     DateTime
+    Library                     String
+    Suite Setup                 Open Browser                about:blank           chrome
+    Suite Teardown              Close All Browsers
+
+
+    *** Variables ***
+
+    ${email}                    youremailaddress
+
+
+	*** Test Cases ***
+
+	Create Salesforce Trial Org
+		GoTo                    https://www.salesforce.com/form/signup/freetrial-sales-pe/
+		VerifyText              Start your free sales trial
+
+		Evaluate                random.seed()               random
+		${exampleFirstName}=    Convert To String           guest1
+		${randomString}=        Generate Random String      length=3-5            chars=0123456789
+		${FirstName}=           Format String               {}{}                  ${exampleFirstName}    ${randomString}
+
+
+		TypeText                First name                  ${FirstName}
+		TypeText                Last name                   user
+		TypeText                Job title                   Learner
+		ClickText               Next
+
+		DropDown                Employees                   21 - 200 employees
+		TypeText                Company                     xyz
+		ClickText               Next
+
+
+		TypeText                Phone                       9999999999
+		TypeText                Email                       ${email}
+		ClickElement           //div[@class\="checkbox-ui"]                   
+
+		ClickText               Submit
+
+3. At line 13, enter your email address.
+
+> **Note:** If you **already have a salesforce account registered to your email**, try and add +1 to your email address like youremailaddress+1@domain.com**
+> **Note:** If you **don't receive emails from Salesforce**, your mail server may block emails used with +1**
 
 ## Delete a file
 
