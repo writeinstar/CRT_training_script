@@ -5,7 +5,7 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 # Exercises
 
 1. Getting started 
-2. [Consulting libraries](https://bitbucket.org/copado-robotic-testing/training-exercises/src/master/exercise-2-consulting-libraries/)
+2. [Consulting libraries](exercise-2-consulting-libraries/)
 3. Online Test Development
 4. [Setup Salesforce Trail](https://bitbucket.org/copado-robotic-testing/training-exercises/src/master/exercise-4-setup-sf-trail/)
 5. [Allowlist CRT IPs](https://bitbucket.org/copado-robotic-testing/training-exercises/src/master/exercise-5-allowlist-crt-ips/)
