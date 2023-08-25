@@ -1,143 +1,188 @@
-# Welcome to Exercise 6!
+# Welcome to Exercise 7 - Using Variables!
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+Welcome to **Exercise 7**. Let's practice all the ins and outs related to Variables.
 
+# Purpose
 
-# Files
+The purpose of this exercise is to learn how to create and use variables in multiple ways.
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+# Prerequisite(s)
 
-## Create files and folders
+- Access to a Salesforce Trial Org. is required. (exercise 4)
+- Access to a Copado Robotic Testing Organization is required
+- Access to a Project
+- Robot created
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+# Learning Objectives
 
-## Switch to another file
+- Create variables in the CRT UI
+- Set variables using the *** Variables *** section
+- Create and use variable files
+- Get variables from a file by argument
+- Set variables using keywords
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+# Create variables in the CRT UI
 
-## Rename a file
+## Suite
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+1. Create a new empty suite **exercise 7 using variables**
 
-## Delete a file
+2. Open Suite Details
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+3. View Suite Variables and Execution Parameters
 
-## Export a file
+4. Add variables here specific to your suite
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+## Robot
 
+1. Open Robot Details
 
-# Synchronization
+2. View Robot Variables and Execution Parameters
 
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
+3. Add variables here specific to an environment / robot. These variables can be accessed by all suites under the robot
 
-There are two types of synchronization and they can complement each other:
+> **Note:** We recommend to create seperate robots for each environment. Considering environment specific report capabilities and dashboards.
 
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
+## Project
 
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
+1. Manage Project (hover the breadcrumb below the search, a blue container appears with the button)
 
-## Open a file
+2. View Project Variables and Execution Parameters
 
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
+3. Add variables here specific to an project, or robot. These variables can be accessed by robots and suites in the project.
 
-## Save a file
+# Set variables using the *** Variables *** section
 
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
+1. Create a new empty suite **exercise 7 using variables**
 
-## Synchronize a file
+2. Create a folder in the root named **exercise-7-using-variables**
 
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
-
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
-
-## Manage file synchronization
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
-
-# Publication
-
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
-
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-## Publish a File
-
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
-
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
-
-## Update a publication
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
-
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
-
-## Manage file publication
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
+3. In this foler, create file salesforce.robot and copy the contents from here [salesforce.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/09baec6c0a5766831b6ba7e4f6a37f3e3a09e043/exercise-6-salesforce-testing/salesforce.robot)
 
 
-# Markdown extensions
+# Create and use variable files
 
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
+# Get variables from a file by argument
 
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
+# Set variables using keywords
 
+# Files Used
 
-## SmartyPants
+## exercise-6-salesforce-testing/salesforce.robot
 
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+		*** Settings ***
+		Resource                      ../resources/common.robot
+		Suite Setup                   Setup Browser
+		Suite Teardown                End suite
 
 
-## KaTeX
+		*** Test Cases ***
+		Entering A Lead
+			[tags]                    Lead                        Git Repo Exercise
+			Appstate                  Home
+			LaunchApp                 Sales
 
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
+			ClickText                 Leads
+			VerifyText                Recently Viewed             timeout=120s
+			ClickText                 New                        anchor=Import
+			VerifyText                Lead Information
+			UseModal                  On                          # Only find fields from open modal dialog
 
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
+			Picklist                  Salutation                  Ms.
+			TypeText                  First Name                  Tina
+			TypeText                  Last Name                   Smith
+			Picklist                  Lead Status                 Working
+			TypeText                  Phone                       +12234567858449             First Name
+			TypeText                  Company                     Growmore                    Last Name
+			TypeText                  Title                       Manager                     Address Information
+			TypeText                  Email                       tina.smith@gmail.com        Rating
+			TypeText                  Website                     https://www.growmore.com/
 
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
+			ClickText                 Lead Source
+			ClickText                 Advertisement
+			ClickText                 Save                        partial_match=False
+			UseModal                  Off
+			Sleep                     2
+			
+			ClickText                 Details                    anchor=Chatter
+			VerifyText               Ms. Tina Smith
+			VerifyText               Manager                     anchor=Title
+			VerifyField               Phone                       +12234567858449
+			VerifyField               Company                     Growmore
+			VerifyField               Website                     https://www.growmore.com/
+			
+			ClickText                 Leads
+			VerifyText                Tina Smith
+			VerifyText                Manager
+			VerifyText                Growmore
 
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+		Delete Tina Smith's Lead
+			[tags]                    Lead                        Git Repo Exercise
+			LaunchApp                 Sales
+			ClickText                 Leads
+			VerifyText                Recently Viewed             timeout=120s
+			
+			Wait Until Keyword Succeeds   1 min   5 sec   ClickText    Tina Smith
+			ClickText                    Show more actions
+			ClickText                    Delete
+			ClickText                    Delete
+			ClickText                    Close
+
+## resources/common.robot
+
+		*** Settings ***
+		Library                         QWeb
+		Library                         QForce
+		Library                         String
 
 
-## UML diagrams
+		*** Variables ***
+		${browser}                      chrome
+		${username}                     YOUR USERNAME HERE
+		${login_url}                    https://YOURDOMAIN.my.salesforce.com                    # Salesforce instance. NOTE: Should be overwritten in CRT variables
+		${home_url}                     ${login_url}/lightning/page/home
 
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
 
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+		*** Keywords ***
+		Setup Browser
+			Set Library Search Order    QWeb                        QForce
+			Open Browser                about:blank                 ${browser}
+			SetConfig                   LineBreak                   ${EMPTY}                    #\ue000
+			SetConfig                   DefaultTimeout              20s                         #sometimes salesforce is slow
 
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
 
-And this will produce a flow chart:
+		End suite
+			Set Library Search Order    QWeb                        QForce
+			Close All Browsers
 
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+
+		Login
+			[Documentation]             Login to Salesforce instance
+			Set Library Search Order    QWeb                        QForce
+			GoTo                        ${login_url}
+			TypeText                    Username                    ${username}                 delay=1
+			TypeText                    Password                    ${password}
+			ClickText                   Log In
+			
+			# Uncommment with Exercise 8 MFA
+
+			# MFA is only required for unknown devices or browsers, once verified it is not asked for. 
+			# To enforce MFA in your SF trial, Setup -> Identity -> Identity Verification -> Require MFA for all direct UI logins to your Salesforce org
+			
+			# ${MFA_needed}=              Run Keyword And Return Status                           Should Not Be Equal         ${None}         ${MY_SECRET}
+			# Log To Console              ${MFA_needed} # When given ${MFA_needed} is true, see Log to Console keyword result
+			
+			# IF                          ${MFA_needed}
+			#     ${mfa_code}=            GetOTP                      ${username}                 ${MY_SECRET}
+			#     TypeSecret              Verification Code           ${mfa_code}
+			#     ClickText               Verify
+			# END
+
+		Home
+			[Documentation]             Navigate to homepage, login if needed
+			Set Library Search Order    QWeb                        QForce
+			GoTo                        ${home_url}
+			${login_status} =           IsText                      To access this page, you have to log in to Salesforce.                  2
+			Run Keyword If              ${login_status}             Login
+			ClickText                   Home
+			VerifyTitle                 Home | Salesforce
