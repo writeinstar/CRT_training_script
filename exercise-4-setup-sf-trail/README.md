@@ -1,4 +1,4 @@
-# Welcome to Exercise 4 - Salesforce Trial Org. Setup!
+# Exercise 4 - Salesforce Trial Org. Setup!
 
 Welcome to **Exercise 4**. Let's create a **Salesforce Trial Org.**! Which will be our system under tests, used for our exercises throughout this training.
 
