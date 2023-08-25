@@ -14,7 +14,8 @@ ${email}                    youremailaddress
 
 
 *** Test Cases ***
-Creating Trial Org
+
+Create Salesforce Trial Org
     GoTo                    https://www.salesforce.com/form/signup/freetrial-sales-pe/
     VerifyText              Start your free sales trial
 
