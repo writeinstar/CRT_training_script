@@ -16,7 +16,7 @@ The purpose of this exercise is to learn how to create and use variables in mult
 # Learning Objectives
 
 - Create variables in the CRT UI
-- Set variables using the *** Variables *** section
+- Set variables using the Variables section
 - Create and use variable files
 - Get variables from a file by argument
 - Set variables using keywords
