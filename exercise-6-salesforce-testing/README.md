@@ -1,10 +1,10 @@
 # Welcome to Exercise 6 - Salesforce Testing!
 
-Welcome to **Exercise 6**. Let's create a **Salesforce Trial Org.**! Which will be our system under tests, used for our exercises throughout this training.
+Welcome to **Exercise 6**. Let's create our first Salesforce tests!
 
 # Purpose
 
-The purpose of this exercise is to create your own Salesforce Trial Org. with the help of CRT.
+The purpose of this exercise is to learn how to create and run your first test against Salesforce using CRT.
 
 # Prerequisite(s)
 
