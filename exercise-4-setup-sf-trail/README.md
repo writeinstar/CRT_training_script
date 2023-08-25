@@ -1,15 +1,16 @@
-# Welcome to Exercise 6!
+# Welcome to Exercise 4 - Salesforce Trial Org Setup!
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+Welcome to **Exercise 4**. Let's create a **Salesforce Trial Org**! Which will be our system under tests, used for our exercises throughout this training.
 
 
-# Files
+# Purpose
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+The purpose of this exercise is to create your own Salesforce Trial Org with the help of CRT.
 
-## Create files and folders
+# Prerequisite(s)
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+- Access to a Copado Robotic Testing Organisation is required
+- Make sure you have a CRT project  robot 
 
 ## Switch to another file
 
