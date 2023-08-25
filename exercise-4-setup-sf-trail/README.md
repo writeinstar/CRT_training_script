@@ -77,4 +77,4 @@ The purpose of this exercise is to create your own Salesforce Trial Org. with th
 
 8. Enter your password and security phrase
 
-9. Save your password to the same text file
+9. Save your ***password*** to the same text file
