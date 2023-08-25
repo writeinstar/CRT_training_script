@@ -23,7 +23,7 @@ The purpose of this exercise is to create your own Salesforce Trial Org. with th
 
 2. Copy the following sample test file. [create-sf-trail](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/aa62a80164107535e1e9bbcacb63175abcd70bbb/exercise-4-setup-sf-trail/create-sf-trail.robot)
 
-    *** Settings ***
+    \*\*\* Settings \*\*\*
 
     Documentation               Create a new Salesforce Trail
     Library                     QWeb
