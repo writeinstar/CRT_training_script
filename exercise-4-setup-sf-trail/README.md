@@ -36,7 +36,7 @@ The purpose of this exercise is to create your own Salesforce Trial Org. with th
 
     ${email}                    youremailaddress
 
-	*\*\*\ Test Cases \*\*\*
+	*\*\* Test Cases \*\*\*
 
 	Create Salesforce Trial Org
 		GoTo                    https://www.salesforce.com/form/signup/freetrial-sales-pe/
