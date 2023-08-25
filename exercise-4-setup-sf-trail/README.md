@@ -32,11 +32,9 @@ The purpose of this exercise is to create your own Salesforce Trial Org. with th
     Suite Setup                 Open Browser                about:blank           chrome
     Suite Teardown              Close All Browsers
 
-
     \*\*\* Variables \*\*\*
 
     ${email}                    youremailaddress
-
 
 	*\*\*\ Test Cases \*\*\*
 
