@@ -26,29 +26,32 @@ The purpose of this exercise is to learn how to create and run your first test a
 
 2. Create a folder in the root named **exercise-6-salesforce-testing**
 
-2. In this foler, create file salesforce.robot and copy the contents from here [salesforce.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/09baec6c0a5766831b6ba7e4f6a37f3e3a09e043/exercise-6-salesforce-testing/salesforce.robot)
+3. In this foler, create file salesforce.robot and copy the contents from here [salesforce.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/09baec6c0a5766831b6ba7e4f6a37f3e3a09e043/exercise-6-salesforce-testing/salesforce.robot)
 
-3. Create a folder in root named **resources**
+4. Create a folder in root named **resources**
 
-4. In this foler, create file common.robot and copy the contents from here [common.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/09baec6c0a5766831b6ba7e4f6a37f3e3a09e043/resources/common.robot
+5. In this foler, create file common.robot and copy the contents from here [common.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/09baec6c0a5766831b6ba7e4f6a37f3e3a09e043/resources/common.robot
 
-4. Click **Live Test** button displayed just above the test case name **Create Salesforce Trial Org**
+6. Open common.robot inside the folder
 
-> **Note:** If you **already have a salesforce account registered to your email**, try and add +1 to your email address like youremailaddress+1@domain.com** and if you **don't receive emails from Salesforce**, your mail server may block emails used with +1**
+7. Update the username variable and login_url variable with your saved username and url (exercise 4)
 
-5. You will now receive an email to verify your account
+8. Exit the QEditor
 
-6. Save the **url** and your **username** to a text file
+9. Navigate your your robot Settings
 
-7. Click button verify account
+10. Add a new variable named **password** and provide your saved password (exercise 4)
 
-8. Enter your password and security phrase
+11. Go back to the QEditor
 
-9. Save your ***password*** to the same text file
+12. Click Live Test button displayed just above the test case name **Entering A Lead** to watch lead creation.
+
+13. Click Live Test button displayed just above the test case name **Delete Tina Smith's Lead** to watch lead deletion.
+
 
 # Files Used
 
-## exercise-4-setup-sf-trail/create-sf-trail.robot
+## exercise-6-salesforce-testing/salesforce.robot
 
 		*** Settings ***
 
@@ -90,3 +93,5 @@ The purpose of this exercise is to learn how to create and run your first test a
 			ClickElement           //div[@class\="checkbox-ui"]                   
 
 			ClickText               Submit
+
+## resources/common.robot
