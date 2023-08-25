@@ -1,4 +1,4 @@
-# Welcome to Exercise 7 - Using Variables!
+# Exercise 7 - Using Variables!
 
 Welcome to **Exercise 7**. Let's practice all the ins and outs related to Variables.
 
