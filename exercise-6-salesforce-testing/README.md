@@ -54,44 +54,118 @@ The purpose of this exercise is to learn how to create and run your first test a
 ## exercise-6-salesforce-testing/salesforce.robot
 
 		*** Settings ***
+		Resource                      ../resources/common.robot
+		Suite Setup                   Setup Browser
+		Suite Teardown                End suite
 
-		Documentation               Create a new Salesforce Trail
-		Library                     QWeb
-		Library                     DateTime
-		Library                     String
-		Suite Setup                 Open Browser                about:blank           chrome
-		Suite Teardown              Close All Browsers
-
-		*** Variables ***
-
-		${email}                    youremailaddress
 
 		*** Test Cases ***
+		Entering A Lead
+			[tags]                    Lead                        Git Repo Exercise
+			Appstate                  Home
+			LaunchApp                 Sales
 
-		Create Salesforce Trial Org
-			GoTo                    https://www.salesforce.com/form/signup/freetrial-sales-pe/
-			VerifyText              Start your free sales trial
+			ClickText                 Leads
+			VerifyText                Recently Viewed             timeout=120s
+			ClickText                 New                        anchor=Import
+			VerifyText                Lead Information
+			UseModal                  On                          # Only find fields from open modal dialog
 
-			Evaluate                random.seed()               random
-			${exampleFirstName}=    Convert To String           guest1
-			${randomString}=        Generate Random String      length=3-5            chars=0123456789
-			${FirstName}=           Format String               {}{}                  ${exampleFirstName}    ${randomString}
+			Picklist                  Salutation                  Ms.
+			TypeText                  First Name                  Tina
+			TypeText                  Last Name                   Smith
+			Picklist                  Lead Status                 Working
+			TypeText                  Phone                       +12234567858449             First Name
+			TypeText                  Company                     Growmore                    Last Name
+			TypeText                  Title                       Manager                     Address Information
+			TypeText                  Email                       tina.smith@gmail.com        Rating
+			TypeText                  Website                     https://www.growmore.com/
 
+			ClickText                 Lead Source
+			ClickText                 Advertisement
+			ClickText                 Save                        partial_match=False
+			UseModal                  Off
+			Sleep                     2
+			
+			ClickText                 Details                    anchor=Chatter
+			VerifyText               Ms. Tina Smith
+			VerifyText               Manager                     anchor=Title
+			VerifyField               Phone                       +12234567858449
+			VerifyField               Company                     Growmore
+			VerifyField               Website                     https://www.growmore.com/
+			
+			ClickText                 Leads
+			VerifyText                Tina Smith
+			VerifyText                Manager
+			VerifyText                Growmore
 
-			TypeText                First name                  ${FirstName}
-			TypeText                Last name                   user
-			TypeText                Job title                   Learner
-			ClickText               Next
-
-			DropDown                Employees                   21 - 200 employees
-			TypeText                Company                     xyz
-			ClickText               Next
-
-
-			TypeText                Phone                       9999999999
-			TypeText                Email                       ${email}
-			ClickElement           //div[@class\="checkbox-ui"]                   
-
-			ClickText               Submit
+		Delete Tina Smith's Lead
+			[tags]                    Lead                        Git Repo Exercise
+			LaunchApp                 Sales
+			ClickText                 Leads
+			VerifyText                Recently Viewed             timeout=120s
+			
+			Wait Until Keyword Succeeds   1 min   5 sec   ClickText    Tina Smith
+			ClickText                    Show more actions
+			ClickText                    Delete
+			ClickText                    Delete
+			ClickText                    Close
 
 ## resources/common.robot
+
+		*** Settings ***
+		Library                         QWeb
+		Library                         QForce
+		Library                         String
+
+
+		*** Variables ***
+		${browser}                      chrome
+		${username}                     YOUR USERNAME HERE
+		${login_url}                    https://YOURDOMAIN.my.salesforce.com                    # Salesforce instance. NOTE: Should be overwritten in CRT variables
+		${home_url}                     ${login_url}/lightning/page/home
+
+
+		*** Keywords ***
+		Setup Browser
+			Set Library Search Order    QWeb                        QForce
+			Open Browser                about:blank                 ${browser}
+			SetConfig                   LineBreak                   ${EMPTY}                    #\ue000
+			SetConfig                   DefaultTimeout              20s                         #sometimes salesforce is slow
+
+
+		End suite
+			Set Library Search Order    QWeb                        QForce
+			Close All Browsers
+
+
+		Login
+			[Documentation]             Login to Salesforce instance
+			Set Library Search Order    QWeb                        QForce
+			GoTo                        ${login_url}
+			TypeText                    Username                    ${username}                 delay=1
+			TypeText                    Password                    ${password}
+			ClickText                   Log In
+			
+			# Uncommment with Exercise 8 MFA
+
+			# MFA is only required for unknown devices or browsers, once verified it is not asked for. 
+			# To enforce MFA in your SF trial, Setup -> Identity -> Identity Verification -> Require MFA for all direct UI logins to your Salesforce org
+			
+			# ${MFA_needed}=              Run Keyword And Return Status                           Should Not Be Equal         ${None}         ${MY_SECRET}
+			# Log To Console              ${MFA_needed} # When given ${MFA_needed} is true, see Log to Console keyword result
+			
+			# IF                          ${MFA_needed}
+			#     ${mfa_code}=            GetOTP                      ${username}                 ${MY_SECRET}
+			#     TypeSecret              Verification Code           ${mfa_code}
+			#     ClickText               Verify
+			# END
+
+		Home
+			[Documentation]             Navigate to homepage, login if needed
+			Set Library Search Order    QWeb                        QForce
+			GoTo                        ${home_url}
+			${login_status} =           IsText                      To access this page, you have to log in to Salesforce.                  2
+			Run Keyword If              ${login_status}             Login
+			ClickText                   Home
+			VerifyTitle                 Home | Salesforce
