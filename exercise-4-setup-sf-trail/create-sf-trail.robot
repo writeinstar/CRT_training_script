@@ -60,9 +60,10 @@ Exercise 4 - Read Mail
     ${sftrial_url}=         Get Attribute   login-href    class  tag=a
     ${sftrial_username}=         Get Attribute   span-user-name    class    tag=span
     ClickText               Verify Account
-
-    TypeText                Â New Password                       TrialSF01!
-    TypeText                Email                       ${email_address}
-    ClickElement           //div[@class\="checkbox-ui"]                   
-
-    ClickText               Submit
+    Switch Window           3
+    Set Variable         ${password}        TrialSF01!            
+    TypeText                New Password                       ${password}
+    TypeText                Confirm New Password               ${password}
+    TypeText                Answer               Krypton
+    ClickText                Change Password
+    Log Many               ${email_address}      ${sftrial_url}    ${sftrial_username}    ${password}              
