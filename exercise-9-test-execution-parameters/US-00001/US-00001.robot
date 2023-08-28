@@ -4,6 +4,7 @@ Documentation               US-00001
 Library                     QWeb
 Suite Setup                 Open Browser                about:blank           chrome
 Suite Teardown              Close All Browsers
+Force Tags                  US-00001
 
 *** Test Cases ***
 
