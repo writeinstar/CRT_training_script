@@ -18,6 +18,7 @@ The purpose of this exercise is to learn how to run (groups of) tests with Copad
 - Differentiate Development from Regression executions
 - Using Tags and tag patterns
 - Execution parameters (test name, tags, or suites)
+- Set Execution parameter on Project, Robot or Suite Level
 
 # Understand Test Suites (files and directories)
 
@@ -94,6 +95,20 @@ The purpose of this exercise is to learn how to run (groups of) tests with Copad
 3. Run by tags (include, exclude), by test name (excl. .robot extension), by suite name (folder name)
 
 > **Note:** [Tag Patterns](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#tag-patterns)
+
+# Set Execution parameter on Project, Robot or Suite Level
+
+1. Select suite **exercise 9 test execution parameters**
+
+2. Open Suite Details
+
+3. Configure   name: -s    value: regression for the run button to only pick tests inside a directory / suite.
+
+4. Save
+
+5. Run Suite
+
+6. Verify only Regression tests have been executed
 
 # Links
 [Files & Directories](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#files-and-directories)
