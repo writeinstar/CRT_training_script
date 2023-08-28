@@ -31,9 +31,11 @@ The purpose of this exercise is to learn how to run (groups of) tests with Copad
 
 4. In folder **exercise-9-test-execution-parameters**, create a new folder named **regression**
 
-5. In folder **regression**, create file accounts.robot and copy the contents from here [accounts.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/ad297462ae95ccc7ac44b134376fda3d0440251e/exercise-9-test-execution-parameters/regression/01__accounts.robot)
+5. In folder **regression**, create file accounts.robot and copy the contents from here [01__accounts.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/ad297462ae95ccc7ac44b134376fda3d0440251e/exercise-9-test-execution-parameters/regression/01__accounts.robot)
 
-6. In folder **regression**, create file leads.robot and copy the contents from here [leads.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/ad297462ae95ccc7ac44b134376fda3d0440251e/exercise-9-test-execution-parameters/regression/02__leads.robot)
+6. In folder **regression**, create file leads.robot and copy the contents from here [02__leads.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/ad297462ae95ccc7ac44b134376fda3d0440251e/exercise-9-test-execution-parameters/regression/02__leads.robot)
+
+> **Note:** Suite names are sorted Alphabetically. Adding a prefix 01__ and 02__ allows you to determine the execution order of the test files inside it's directory.
 
 7. In folder **regression**, create a new folder named **nested**
 
