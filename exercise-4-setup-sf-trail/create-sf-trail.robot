@@ -15,6 +15,15 @@ ${email}                    youremailaddress
 
 *** Test Cases ***
 
+Exercise 4 - Create online mailbox
+    GoTo                    https://www.mailinator.com/
+    ${unique_mail_address}=	 Generate Random String	14	[NUMBERS]temponlinemail
+    Type Text               Enter Public Mailinator Inbox    ${unique_mail_address}
+    Click Text              GO
+    Set Suite Variable      ${email_address}            ${unique_mail_address}@mailinator.com
+    Log to Console          ${email_address}          
+
+
 Exercise 4 - Create Salesforce Trial Org
     GoTo                    https://www.salesforce.com/form/signup/freetrial-sales-pe/
     VerifyText              Start your free sales trial
@@ -36,7 +45,7 @@ Exercise 4 - Create Salesforce Trial Org
 
 
     TypeText                Phone                       9999999999
-    TypeText                Email                       ${email}
+    TypeText                Email                       ${email_address}
     ClickElement           //div[@class\="checkbox-ui"]                   
 
     ClickText               Submit
