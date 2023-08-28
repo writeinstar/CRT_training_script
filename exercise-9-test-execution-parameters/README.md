@@ -27,7 +27,14 @@ The purpose of this exercise is to learn how to run (groups of) tests with Copad
 
 3. In this folder, create a new folder named **regression**
 
-3. In this folder, create file libraries.robot and copy the contents from here [libaries.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/582f5c6ce20adf223d58b2f12f3b97073e7f93c0/exercise-2-consulting-libraries/libraries.robot)
+4. In this folder, create file accounts.robot and copy the contents from here [accounts.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/e192ef391cfce07ce872a5e9757e50d783e79ee9/exercise-9-test-execution-parameters/regression/accounts.robot)
+
+5. In this folder, create file leads.robot and copy the contents from here [leads.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/e192ef391cfce07ce872a5e9757e50d783e79ee9/exercise-9-test-execution-parameters/regression/leads.robot)
+
+6. In this folder, create a new folder named **nested**
+
+7. In this folder, create file leads.robot and copy the contents from here [opportunities.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/582f5c6ce20adf223d58b2f12f3b97073e7f93c0/exercise-2-consulting-libraries/libraries.robot)
+
 
 4. Use Big Live Test button and run step by step test case Consult Libraries
 
