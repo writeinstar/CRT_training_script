@@ -4,6 +4,7 @@ Documentation                  Create a new Salesforce Trail
 Library                        QWeb
 Library                        DateTime
 Library                        String
+Library                        BuiltIn
 Suite Setup                    Open Browser                about:blank                 chrome
 Suite Teardown                 Close All Browsers
 
@@ -55,6 +56,7 @@ Exercise 4 - Create Salesforce Trial Org
 Exercise 4 - Do it for me! Read Mail, Verify Account and Set Password
     Switch Window              1
     ${email_count}=            Get Text Count             Welcome to Salesforce
+    Log to Console           ${email_count}   
     IF                 '${email_count}' > '${0}'
         Sleep 180
     ELSE
