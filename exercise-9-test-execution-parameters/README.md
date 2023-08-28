@@ -39,16 +39,59 @@ The purpose of this exercise is to learn how to run (groups of) tests with Copad
 
 8. In this **nested** folder, create file opportunities.robot and copy the contents from here [opportunities.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/50a73e34b4a5a70df04463af665d8213d1278604/exercise-9-test-execution-parameters/regression/nested/opportunities.robot)
 
-
 # Differentiate Development from Regression executions
 
-1. In the folder **exercise-2-consulting-libraries**, open file libraries.robot
+## Regression Mode
 
-2. Check out the QWord Palette and identify libraries and keywords out of the box.
+1. Open **exercise 9 test execution parameters**
+
+2. Select Regression Mode
+
+3. Click Run button
+
+4. View Test Execution in Regression Mode
+
+5. View Dashboard Changing
+
+## Development Mode
+
+1. Open **exercise 9 test execution parameters**
+
+2. Select Development Mode
+
+3. Click Run Button
+
+4. View Test Execution in Development Mode
+
+> **Note:** Execute test button in QEditor always results in a Development mode run.
+
+# Record and Stream Test Video
+
+1. Open **exercise 9 test execution parameters**
+
+2. Select Recording Video All
+
+2. Select Streaming Yes
+
+3. View Test Execution Stream
+
+4. Click Video button at run result
+
+5. Inside the video, click three dots to download video (for attaching it to a bug for example)
 
 # Using Tags and tag patterns
 
+1. View the usage of tagging in the example tests
+
 # Execution parameters (test name, tags, or suites)
+
+1. Open **exercise 9 test execution parameters**
+
+2. Select checkbox advanced options
+
+3. Run by tags (include, exclude), by test name (excl. .robot extension), by suite name (folder name)
+
+> **Note:** [Tag Patterns](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#tag-patterns)
 
 # Links
 [Files & Directories](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#files-and-directories)
