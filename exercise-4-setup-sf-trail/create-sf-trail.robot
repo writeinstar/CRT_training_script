@@ -21,10 +21,12 @@ Exercise 4 - Create online mailbox
     Type Text               Enter Public Mailinator Inbox    ${unique_mail_address}
     Click Text              GO
     Set Suite Variable      ${email_address}            ${unique_mail_address}@mailinator.com
-    Log to Console          ${email_address}          
+    Log to Console          ${email_address}
+              
 
 
 Exercise 4 - Create Salesforce Trial Org
+    Open Window
     GoTo                    https://www.salesforce.com/form/signup/freetrial-sales-pe/
     VerifyText              Start your free sales trial
 
@@ -45,6 +47,21 @@ Exercise 4 - Create Salesforce Trial Org
 
 
     TypeText                Phone                       9999999999
+    TypeText                Email                       ${email_address}
+    ClickElement           //div[@class\="checkbox-ui"]                   
+
+    ClickText               Submit
+
+Exercise 4 - Read Mail
+    Switch Window           1
+    ClickItemUntil          Welcome to Salesforce         GO    timeout=180
+    ClickText               Welcome to Salesforce 
+    ScrollText              Again, welcome to Salesforce
+    ${sftrial_url}=         Get Attribute   login-href    class  tag=a
+    ${sftrial_username}=         Get Attribute   span-user-name    class    tag=span
+    ClickText               Verify Account
+
+    TypeText                Â New Password                       TrialSF01!
     TypeText                Email                       ${email_address}
     ClickElement           //div[@class\="checkbox-ui"]                   
 
