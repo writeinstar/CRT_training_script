@@ -8,7 +8,7 @@ Suite Teardown              Close All Browsers
 *** Test Cases ***
 
 regression - leads Test Case 1
-    [Tags]     Regression    Leads
+    [Tags]     Regression    Leads    skip
     Log    Regression - Leads Test Case 1   
 
 regression - leads Test Case 2
