@@ -11,4 +11,4 @@ regression - leads Test Case 1
     Log    Regression - Leads Test Case 1   
 
 regression - leads Test Case 2
-    Log    Regression - Lead Test Case 2
+    Log    Regression - Leads Test Case 2
