@@ -55,7 +55,7 @@ The purpose of this exercise is to learn how to run (groups of) tests with Copad
 
 ## Development Mode
 
-1. Open **exercise 9 test execution parameters**
+1. Select suite **exercise 9 test execution parameters**
 
 2. Select Development Mode
 
@@ -67,7 +67,7 @@ The purpose of this exercise is to learn how to run (groups of) tests with Copad
 
 # Record and Stream Test Video
 
-1. Open **exercise 9 test execution parameters**
+1. Select suite **exercise 9 test execution parameters**
 
 2. Select Recording Video All
 
@@ -85,7 +85,7 @@ The purpose of this exercise is to learn how to run (groups of) tests with Copad
 
 # Execution parameters (test name, tags, or suites)
 
-1. Open **exercise 9 test execution parameters**
+1. Select suite **exercise 9 test execution parameters**
 
 2. Select checkbox advanced options
 
