@@ -33,8 +33,8 @@ Entering A Lead
     Sleep                     2
     
     ClickText                 Details                    anchor=Chatter
-    VerifyText               Ms. Tina Smith
-    VerifyText               Manager                     anchor=Title
+    VerifyText                Ms. Tina Smith
+    VerifyText                Manager                     anchor=Title
     VerifyField               Phone                       +12234567858449
     VerifyField               Company                     Growmore
     VerifyField               Website                     https://www.growmore.com/
