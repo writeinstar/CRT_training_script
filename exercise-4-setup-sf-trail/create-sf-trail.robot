@@ -58,7 +58,7 @@ Exercise 4 - Do it for me! Read Mail, Verify Account and Set Password
     ${email_count}=            Get Text Count             Welcome to Salesforce
     Log to Console           ${email_count}   
     IF                 '${email_count}' > '${0}'
-        Sleep 180
+        Sleep          180
     ELSE
          ClickItemUntil             Welcome to Salesforce       GO                          timeout=180
     END   
