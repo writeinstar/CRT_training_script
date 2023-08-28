@@ -1,9 +1,7 @@
 *** Settings ***
 
-Documentation               Create a new Salesforce Trail
+Documentation               Accounts
 Library                     QWeb
-Library                     DateTime
-Library                     String
 Suite Setup                 Open Browser                about:blank           chrome
 Suite Teardown              Close All Browsers
 
