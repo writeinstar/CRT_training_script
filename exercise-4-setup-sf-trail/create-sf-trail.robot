@@ -54,7 +54,12 @@ Exercise 4 - Create Salesforce Trial Org
 
 Exercise 4 - Do it for me! Read Mail, Verify Account and Set Password
     Switch Window              1
-    ClickItemUntil             Welcome to Salesforce       GO                          timeout=180
+    ${email_count}=            Get Text Count             Welcome to Salesforce
+    IF                 '${email_count}' > '${0}'
+        Sleep 180
+    ELSE
+         ClickItemUntil             Welcome to Salesforce       GO                          timeout=180
+    END   
     ClickText                  Welcome to Salesforce
     ScrollText                 Again, welcome to Salesforce
     ${sftrial_url}=            Get Attribute               login-href                  class                      tag=a
