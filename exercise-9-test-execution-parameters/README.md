@@ -1,6 +1,6 @@
 # Exercise 9 - Test Execution (parameters)!
 
-Welcome to **Exercise 9**. Everything you need to know to run your tests and organize your folder structure.
+Welcome to **Exercise 9**. Everything you need to know to run your tests and organize your tests.
 
 # Purpose
 
