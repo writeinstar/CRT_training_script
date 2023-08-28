@@ -9,4 +9,3 @@ Entering A Lead
     [tags]                    Lead                        Git Repo Exercise
     Appstate                  Home
     LaunchApp                 Sales
-
