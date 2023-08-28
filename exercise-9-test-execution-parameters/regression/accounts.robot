@@ -9,5 +9,8 @@ Suite Teardown              Close All Browsers
 
 *** Test Cases ***
 
-Create Salesforce Trial Org
-    GoTo                    https://www.salesforce.com/form/signup/freetrial-sales-pe/
+regression -> accounts Test Case 1
+    Log    Regression - Accounts Test Case 1   
+
+regression -> accounts Test Case 2
+    Log    Regression - Accounts Test Case 2
