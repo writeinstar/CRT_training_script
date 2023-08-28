@@ -1,6 +1,6 @@
-# Exercise 2 - Consulting Libraries!
+# Exercise 9 - Test Execution (parameters)!
 
-Welcome to **Exercise 2**. Find out great assets you can put in your toolbox.
+Welcome to **Exercise 9**. Everything you need to know to run your tests and organize your folder structure.
 
 # Purpose
 
