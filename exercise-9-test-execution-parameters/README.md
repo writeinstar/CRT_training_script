@@ -21,9 +21,9 @@ The purpose of this exercise is to learn how to run (groups of) tests with Copad
 
 # Differentiate Development from Regression executions
 
-1. Create a new empty suite **exercise 2 consulting libraries**
+1. Create a new empty suite **exercise 9 test execution parameters**
 
-2. Create a folder in the root named **exercise-2-consulting-libraries**
+2. Create a folder in the root named **exercise-9-test-execution-parameters**
 
 3. In this folder, create file libraries.robot and copy the contents from here [libaries.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/582f5c6ce20adf223d58b2f12f3b97073e7f93c0/exercise-2-consulting-libraries/libraries.robot)
 
