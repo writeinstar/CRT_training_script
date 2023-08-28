@@ -5,7 +5,7 @@ Suite Teardown                End suite
 
 
 *** Test Cases ***
-Exercise 2 Consulting Libraries
+Exercise 2 - Consulting Libraries
     Go To                     https://docs.copado.com/articles/\#!copado-robotic-testing-publication/all-qwords
     Go To                     https://docs.copado.com/resources/Storage/copado-robotic-testing-publication/CRT%20Site/qwords-reference/current/qwords/_attachments/QWeb.html
     Go To                     https://docs.copado.com/resources/Storage/copado-robotic-testing-publication/CRT%20Site/qwords-reference/current/qwords/_attachments/QForce.html
