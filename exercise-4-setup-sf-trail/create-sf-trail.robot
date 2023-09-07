@@ -75,4 +75,6 @@ Exercise 4 - Do it for me! Read Mail, Verify Account and Set Password
     ClickText                  Change Password
     Log Many                   ${email_address}            ${sftrial_url}              ${sftrial_username}        ${password}
     ClickText                  Close this window
+    Set Global Variable        username                    ${sftrial_username}
+    Set Global Variable        password                    ${password}         
 
