@@ -64,8 +64,8 @@ Exercise 4 - Do it for me! Read Mail, Verify Account and Set Password
     END   
     ClickText                  Welcome to Salesforce
     ScrollText                 Again, welcome to Salesforce
-    ${sftrial_url}=            Get Attribute               login-href                  class                      tag=a
-    ${sftrial_username}=       Get Attribute               span-user-name              class                      tag=span
+    ${sftrial_url}=            GetText                     login-href                  tag=a
+    ${sftrial_username}=       GetText                     span-user-name              tag=span
     ClickText                  Verify Account
     Switch Window              3
     Set Suite Variable         ${password}                 TrialSF01!
