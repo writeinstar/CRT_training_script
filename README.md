@@ -52,6 +52,9 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 1.  [Global Search](24__examples/salesforce/global-search)
 2.  [Tables](24__examples/salesforce/tables)
 3.  [Forms](24__examples/salesforce/forms)
+4.  [Salesforce REST API](24__examples/salesforce/rest-api)
+    1.  [Apex Testing](24__examples/salesforce/rest-api/apex)
+    2.  [Records](24__examples/salesforce/rest-api/records)
 
 ### Service Now
 
