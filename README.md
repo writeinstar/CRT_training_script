@@ -24,7 +24,7 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 18. [Test Scheduling](18__exercise-test-scheduling)
 19. [CRT API Capabilities for non Copado CI/CD](19__exercise-crt-api)
 20. [Agile Testing / User Story Testing](20__exercise-agile-user-story-testing)
-21. [Continuous Testing within CI/CD](21__exercise-continuous-testing-within-copado-cicd)
+21. [Continuous Testing within Copado CI/CD](21__exercise-continuous-testing-within-copado-cicd)
 22. [Install and Configure On Premise Test Development using VSCode](22__exercise-on-premise-test-development-vscode)
 23. [Mobile Testing](23__exercise-mobile-testing)
 
