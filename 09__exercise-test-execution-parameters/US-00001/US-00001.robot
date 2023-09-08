@@ -8,8 +8,8 @@ Force Tags                  US-00001
 
 *** Test Cases ***
 
-US-00001 - Test Case 1
+Exercise 9 - US-00001 - Test Case 1
     Log    US-00001 - Test Case 1  
 
-US-00001 - Test Case 2
+Exercise 9 - US-00001 - Test Case 2
     Log    US-00001 - Test Case 1
