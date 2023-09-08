@@ -22,6 +22,7 @@ Exercise 7 - Variable Files Access Yaml Variables
     Log        ${yaml_dict}[key_1]
 
 Exercise 7 - Variable Files Access Dynamic Variables
+    # Import Variables	${CURDIR}/DynamicVariables.py
     Log Variables
     Log   ${RANDOM_INT}
     Log   ${CURRENT_TIME}
