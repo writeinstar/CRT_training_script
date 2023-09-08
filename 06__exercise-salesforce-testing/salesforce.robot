@@ -33,11 +33,12 @@ Exercise 6 - Entering A Lead Tina Smith
     Sleep                     2
     
     ClickText                 Details                    anchor=Activity
-    VerifyText                Ms. Tina Smith
-    VerifyText                Manager                     anchor=Title
-    VerifyField               Phone                       +12234567858449
+    VerifyText                Ms. Tina Smith             anchor=Details 
+    VerifyText                Manager                     anchor=Details
+    VerifyText                +12234567858449             anchor=Lead Status
     VerifyField               Company                     Growmore
     VerifyField               Website                     https://www.growmore.com/
+    Log Screenshot
     
     ClickText                 Leads
     VerifyText                Tina Smith
@@ -54,3 +55,4 @@ Exercise 6 - Delete Tina Smith's Lead
     ClickText                    Delete
     ClickText                    Delete
     ClickText                    Close
+    Log Screenshot
