@@ -5,7 +5,7 @@ Suite Teardown                End suite
 
 
 *** Test Cases ***
-Entering A Lead
+Exercise 7 - Multi Factor Authentication
     [tags]                    Lead                        Git Repo Exercise
     Appstate                  Home
     LaunchApp                 Sales
