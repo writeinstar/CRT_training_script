@@ -82,4 +82,5 @@ Exercise 4 - Do it for me! Read Mail, Verify Account and Set Password
     Set Global Variable        ${password}                    ${password}
     Log To Console             ${login_url} 
     Log To Console             ${home_url}
+    Log To Console             ${username}
     Log To Console             ${password}
