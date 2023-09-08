@@ -32,15 +32,19 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 
 ## Copado Robotic Testing
 
-1.  [Data Driven Testing](24__examples/data-driven-testing)
-2.  [Overcome Flaky Tests](24__examples/overcome-flaky-tests)
-3.  [Test Generation](24__examples/test-generation)
-4.  [External Test Data](24__examples/external-test-data)
+1.  [Text Locators](24__examples/text)
+2.  [Item Locators (HTML Tag Attributes)](24__examples/items-html-tag-attributes)
+3.  [Element Locators (Xpath)](24__examples/elements-xpath)
+4.  [Data Driven Testing](24__examples/data-driven-testing)
+5.  [Overcome Flaky Tests](24__examples/overcome-flaky-tests)
+6.  [Test Generation](24__examples/test-generation)
+7.  [External Test Data](24__examples/external-test-data)
 
 ## Salesforce
 
-1.  [Working with Tables](24__examples/salesforce/tables)
-2.  [Working with Forms](24__examples/salesforce/forms)
+1.  [Global Search](24__examples/salesforce/global-search)
+2.  [Tables](24__examples/salesforce/tables)
+3.  [Forms](24__examples/salesforce/forms)
 
 ## CI / CD
 
