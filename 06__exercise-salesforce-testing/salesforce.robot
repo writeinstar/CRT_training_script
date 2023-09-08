@@ -5,7 +5,7 @@ Suite Teardown                End suite
 
 
 *** Test Cases ***
-Entering A Lead
+Exercise 6 - Entering A Lead Tina Smith
     [tags]                    Lead
     Appstate                  Home
     LaunchApp                 Sales
@@ -44,7 +44,7 @@ Entering A Lead
     VerifyText                Manager
     VerifyText                Growmore
 
-Delete Tina Smith's Lead
+Exercise 6 - Delete Tina Smith's Lead
     [tags]                    Lead                        Git Repo Exercise
     LaunchApp                 Sales
     ClickText                 Leads
