@@ -58,6 +58,7 @@ Exercise 4 - Do it for me! Read Mail, Verify Account and Set Password
     ${email_count}=            Get Text Count             Welcome to Salesforce
     Log to Console           ${email_count}   
     IF                 '${email_count}' > '${0}'
+        Log to Console       I've found an existing mail, let's wait 180 sec for the new mail to arrive.
         Sleep          180
     ELSE
          ClickItemUntil             Welcome to Salesforce       GO                          timeout=180
