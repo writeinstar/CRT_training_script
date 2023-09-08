@@ -48,6 +48,10 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 2.  [Tables](24__examples/salesforce/tables)
 3.  [Forms](24__examples/salesforce/forms)
 
+### Service Now
+
+1.  [Menu](24__examples/service-now/menu)
+
 ## Integrations
 
 ### CI / CD
