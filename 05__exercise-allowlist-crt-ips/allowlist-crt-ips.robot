@@ -6,9 +6,9 @@ Suite Teardown         End suite
 *** Test Cases ***
 Allowlist IPs at Setup Network Access
     [tags]             Lead                        Git Repo Exercise
-    Log To Console             ${sftrial_url} 
-    Log To Console             ${sftrial_username}
-    Log To Console             ${password}                    
+    Log To Console             ${login_url} 
+    Log To Console             ${home_url}
+    Log To Console             ${password}               
     Appstate           Home
 
     ClickText          Setup
