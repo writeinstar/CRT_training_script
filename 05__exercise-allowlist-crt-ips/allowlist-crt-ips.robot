@@ -6,6 +6,7 @@ Suite Teardown         End suite
 *** Test Cases ***
 Allowlist IPs at Setup Network Access
     [tags]             Lead                        Git Repo Exercise
+   Log To Console      ${password}
     Appstate           Home
 
     ClickText          Setup                       anchor=Salesforce Help
