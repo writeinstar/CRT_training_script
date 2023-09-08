@@ -4,7 +4,7 @@ Suite Setup            Setup Browser
 Suite Teardown         End suite
 
 *** Test Cases ***
-Entering A Lead
+Allowlist IPs at Setup Network Access
     [tags]             Lead                        Git Repo Exercise
     Appstate           Home
 
