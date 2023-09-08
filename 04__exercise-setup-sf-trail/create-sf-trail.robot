@@ -76,6 +76,6 @@ Exercise 4 - Do it for me! Read Mail, Verify Account and Set Password
     Log Many                   ${email_address}            ${sftrial_url}              ${sftrial_username}        ${password}
     ClickText                  Close this window
     Set Global Variable        login_url                   ${sftrial_url}
-    Set Global Variable        home_url                  ${login_url}/lightning/page/home
+    Set Global Variable        home_url                    ${login_url}/lightning/page/home
     Set Global Variable        username                    ${sftrial_username}
     Set Global Variable        password                    ${password}         
