@@ -40,18 +40,22 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 6.  [Test Generation](24__examples/test-generation)
 7.  [External Test Data](24__examples/external-test-data)
 
-## Salesforce
+## Technologies
+
+### Salesforce
 
 1.  [Global Search](24__examples/salesforce/global-search)
 2.  [Tables](24__examples/salesforce/tables)
 3.  [Forms](24__examples/salesforce/forms)
 
-## CI / CD
+## Integrations
+
+### CI / CD
 
 1.  [Azure Pipelines](24__examples/ci-cd/azure-pipelines)
 2.  [GitLab CI](24__examples/ci-cd/gitlab-ci)
 3.  [Jenkins](24__examples/ci-cd/jenkins)
 
-## E-Mail Servers
+### E-Mail Servers
 
 1.  [Mail](24__examples/e-mail)
