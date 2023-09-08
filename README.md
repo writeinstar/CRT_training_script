@@ -39,6 +39,11 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 5.  [Overcome Flaky Tests](24__examples/overcome-flaky-tests)
 6.  [Test Generation](24__examples/test-generation)
 7.  [External Test Data](24__examples/external-test-data)
+8.  [String Manipulation](24__examples/string-manipulation)
+9.  [Visual Testing with QVision](24__examples/visual-testing)
+10. [Image Comparions with QImage](24__examples/image-comparison)
+11. [PDF Testing](24__examples/pdf)
+12. [Operating System](24__examples/operating-system)
 
 ## Technologies
 
