@@ -4,7 +4,7 @@ Suite Setup                Setup Browser
 Suite Teardown             End suite
 
 *** Test Cases ***
-Allowlist IPs at Setup Network Access
+Exercise 5 - Allowlist IPs at Setup Network Access
     [tags]                 IPs
     Log To Console             ${login_url} 
     Log To Console             ${home_url}
