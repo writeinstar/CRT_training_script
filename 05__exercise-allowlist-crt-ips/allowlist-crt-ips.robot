@@ -7,6 +7,8 @@ Suite Teardown         End suite
 Allowlist IPs at Setup Network Access
     [tags]             Lead                        Git Repo Exercise
    Log To Console      ${password}
+   ${password}         Get Variable Value          ${password}
+   Set Global Variable   ${password}               ${password}                       
     Appstate           Home
 
     ClickText          Setup                       anchor=Salesforce Help
