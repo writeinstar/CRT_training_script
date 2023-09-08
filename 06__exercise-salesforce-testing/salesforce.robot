@@ -6,7 +6,7 @@ Suite Teardown                End suite
 
 *** Test Cases ***
 Entering A Lead
-    [tags]                    Lead                        Git Repo Exercise
+    [tags]                    Lead
     Appstate                  Home
     LaunchApp                 Sales
 
