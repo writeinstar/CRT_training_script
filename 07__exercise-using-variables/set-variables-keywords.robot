@@ -6,12 +6,12 @@ Exercise 7 - Test Keyword Variables and Scope 1
     Set Suite Variable    ${my_suite_var}    I'm a suite variable
     Set Global Variable    ${my_global_var}    I'm a global variable
 
-Exercise 7 - Test Keyword Variables and Scope 2
+Exercise 7 - Test Keyword Variables and Scope 2 (fails intentional)
     Log    ${my_suite_var}    # Pass: Variable exists for the scope of the whole suite
     Log    ${my_global_var}   # Pass: Variable exists for the scope of the whole test run
     Log    ${my_local_var}    # Fails: Variable only exists in the scope of Test Case 1
 
-Exercise 7 - Test Keyword Variables and Scope 3
+Exercise 7 - Test Keyword Variables and Scope 3 (fails intentional)
     My Keyword
     Log    ${my_test_var}    # Pass: Variable  exists in the scope of the test case
     Log    ${my_keyword_var}    # Fails: Variable only exists in the scope of My Keyword
