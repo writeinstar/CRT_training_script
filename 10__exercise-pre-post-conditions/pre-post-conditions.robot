@@ -12,15 +12,11 @@ ${loginUrl}=    Test Env
 
 *** Test Cases ***
 
-${loginUrl} Default
-    [Documentation]     Setup and teardown from setting section
-    VerifyText          Find your spirit animal
-
-Default 2 
+Exercise 10 - Test Setup and Test Teardown used in Settings 
     [Documentation]     Setup and teardown from setting section
     VerifyText          The animal friendly clothing company
 
-Overridden Setup
+Exercise 10 - Overridden Test Setup
     [Documentation]     Own setup, teardown from setting section
     [Setup]             GoTo                https://qentinelqi.github.io/shop/products/deer/
     VerifyText          Slim Fit, 5oz 100% Cotton T-Shirt.
@@ -29,14 +25,14 @@ Overridden Setup
     VerifyText          Sacha the Deer
     ClickText           Continue shopping
 
-No teardown
+Exercise 10 - Overridden Test Teardown 1
     [Documentation]     Default setup, no teardown at all
     VerifyText          Products
     VerifyText          Our Story
     VerifyText          Contact
     [Teardown]
 
-No teardown 2
+Exercise 10 - Overridden Test Teardown 2
     [Documentation]     Setup and teardown can be disabled also with special value NONE
     VerifyText          Products
     VerifyText          Our Story
