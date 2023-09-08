@@ -32,7 +32,7 @@ Exercise 6 - Entering A Lead Tina Smith
     UseModal                  Off
     Sleep                     2
     
-    ClickText                 Details                    anchor=Chatter
+    ClickText                 Details                    anchor=Activity
     VerifyText                Ms. Tina Smith
     VerifyText                Manager                     anchor=Title
     VerifyField               Phone                       +12234567858449
