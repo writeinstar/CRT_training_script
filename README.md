@@ -35,6 +35,7 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 1.  [Data Driven Testing](24__examples/data-driven-testing)
 2.  [Overcome Flaky Tests](24__examples/overcome-flaky-tests)
 3.  [Test Generation](24__examples/test-generation)
+4.  [External Test Data](24__examples/external-test-data)
 
 ## Salesforce
 
