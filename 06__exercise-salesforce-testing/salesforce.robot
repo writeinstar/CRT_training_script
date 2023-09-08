@@ -51,7 +51,6 @@ Exercise 6 - Delete Tina Smith's Lead
     VerifyText                Recently Viewed             timeout=120s
     
     Wait Until Keyword Succeeds   1 min   5 sec   ClickText    Tina Smith
-    ClickText                    Show more actions
     ClickText                    Delete
     ClickText                    Delete
     ClickText                    Close
