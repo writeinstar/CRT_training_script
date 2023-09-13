@@ -30,7 +30,7 @@ The purpose of this exercise is to learn how to create and run your first test a
 
 4. Create a folder in root named **resources**
 
-5. In this foler, create file common.robot and copy the contents from here [common.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/09baec6c0a5766831b6ba7e4f6a37f3e3a09e043/resources/common.robot)
+5. In this folder, create file common.robot and copy the contents from here [common.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/09baec6c0a5766831b6ba7e4f6a37f3e3a09e043/resources/common.robot)
 
 6. Open common.robot inside the folder
 
