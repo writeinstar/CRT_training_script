@@ -24,29 +24,29 @@ The purpose of this exercise is to learn how to run (groups of) tests with Copad
 
 1. Create a new empty suite **exercise 9 test execution parameters**
 
-2. Create a folder in the root named **exercise-9-test-execution-parameters**
+2. Create a folder in the root named **09__exercise-test-execution-parameters**
 
-3. In folder **exercise-9-test-execution-parameters**, create a new folder named **US-00001**
+3. In folder **09__exercise-test-execution-parameters**, create a new folder named **US-00001**
 
-4. In folder **US-00001**, create file US-00001.robot and copy the contents from here [US-00001.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/50a73e34b4a5a70df04463af665d8213d1278604/exercise-9-test-execution-parameters/US-00001/US-00001.robot)
+4. In folder **US-00001**, create file US-00001.robot and copy the contents from here [US-00001.robot](US-00001/US-00001.robot)
 
-4. In folder **exercise-9-test-execution-parameters**, create a new folder named **regression**
+4. In folder **09__exercise-test-execution-parameters**, create a new folder named **regression**
 
-5. In folder **regression**, create file accounts.robot and copy the contents from here [01__accounts.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/ad297462ae95ccc7ac44b134376fda3d0440251e/exercise-9-test-execution-parameters/regression/01__accounts.robot)
+5. In folder **regression**, create file accounts.robot and copy the contents from here [01__accounts.robot](regression/01__accounts.robot)
 
-6. In folder **regression**, create file leads.robot and copy the contents from here [02__leads.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/ad297462ae95ccc7ac44b134376fda3d0440251e/exercise-9-test-execution-parameters/regression/02__leads.robot)
+6. In folder **regression**, create file leads.robot and copy the contents from here [02__leads.robot](regression/02__leads.robot)
 
 > **Note:** Suite names are sorted Alphabetically. Adding a prefix 01__ and 02__ allows you to determine the execution order of the test files inside it's directory.
 
 7. In folder **regression**, create a new folder named **nested**
 
-8. In this **nested** folder, create file opportunities.robot and copy the contents from here [opportunities.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/50a73e34b4a5a70df04463af665d8213d1278604/exercise-9-test-execution-parameters/regression/nested/opportunities.robot)
+8. In this **nested** folder, create file opportunities.robot and copy the contents from here [opportunities.robot](regression/nested/opportunities.robot)
 
 # Differentiate Development from Regression executions
 
 ## Regression Mode
 
-1. Open **exercise 9 test execution parameters**
+1. Select suite **exercise 9 test execution parameters**
 
 2. Select Regression Mode
 

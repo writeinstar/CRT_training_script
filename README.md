@@ -16,17 +16,17 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 10. [Pre- and Post Conditions](10__exercise-pre-post-conditions/)
 11. [Notifications and Dashboards](11__exercise-notifications-and-dashboards)
 12. [Custom Keywords and Custom Libraries](12__exercise-custom-keywords-custom-libraries)
-13. [Syntax Controls Conditons Loops and More](13__exercise-syntax-controls-conditions-loops-and-more)
+13. [Syntax Controls Conditions Loops and More](13__exercise-syntax-controls-conditions-loops-and-more)
 14. [Data Driven Testing](14__exercise-data-driven-testing)
 15. [Unique Test Data](15__exercise-unique-test-data)
 16. [Git Integration and Folder Composition](16__exercise-git-integration-and-folder-composition)
-17. [API Testing with CRT](17__exercise-api-testing)
-18. [Test Scheduling](18__exercise-test-scheduling)
-19. [CRT API Capabilities for non Copado CI/CD](19__exercise-crt-api)
-20. [Agile Testing / User Story Testing with Copado Agile](20__exercise-agile-user-story-testing-with-copado-agile)
-21. [Continuous Testing within Copado CI/CD](21__exercise-continuous-testing-within-copado-cicd)
-22. [Install and Configure On Premise Test Development using VSCode](22__exercise-on-premise-test-development-vscode)
-23. [Mobile Testing](23__exercise-mobile-testing)
+17. [Test Scheduling](17__exercise-test-scheduling)
+18. [Agile Testing / User Story Testing with Copado Agile](18__exercise-agile-user-story-testing-with-copado-agile)
+19. [Continuous Testing within Copado CI/CD](19__exercise-continuous-testing-within-copado-cicd)
+20. [Install and Configure On Premise Test Development using VSCode](20__exercise-on-premise-test-development-vscode)
+21. [API Testing with CRT](21__exercise-api-testing)
+22. [Mobile Testing](22__exercise-mobile-testing)
+23. [CRT API Capabilities for non Copado CI/CD](23__exercise-crt-api)
 
 # Examples
 
@@ -41,10 +41,11 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 4.  [Test Generation](24__examples/test-generation)
 5.  [External Test Data](24__examples/external-test-data)
 6.  [String Manipulation](24__examples/string-manipulation)
-7.  [Visual Testing with QVision](24__examples/visual-testing)
-8.  [Image Comparions with QImage](24__examples/image-comparison)
-9.  [PDF Testing](24__examples/pdf)
-10. [Operating System](24__examples/operating-system)
+7.  [Date & Time](24__examples/date-time)
+8.  [Visual Testing with QVision](24__examples/visual-testing)
+9.  [Image Comparions with QImage](24__examples/image-comparison)
+10.  [PDF Testing](24__examples/pdf)
+11. [Operating System](24__examples/operating-system)
 
 ## Technologies
 

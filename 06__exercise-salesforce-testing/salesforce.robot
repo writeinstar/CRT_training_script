@@ -1,14 +1,14 @@
 *** Settings ***
 Resource                      ../resources/common.robot
 Suite Setup                   Setup Browser
-Suite Teardown                End suite
+Suite Teardown                Close All Browser Sessions
 
 
 *** Test Cases ***
 Exercise 6 - Entering A Lead Tina Smith
     [tags]                    Lead
     Appstate                  Home
-    LaunchApp                 Sales
+    Launch App                 Sales
 
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s

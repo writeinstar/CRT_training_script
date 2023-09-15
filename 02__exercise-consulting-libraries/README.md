@@ -21,19 +21,21 @@ The purpose of this exercise is to learn how to find libraries and keywords. Use
 
 1. Create a new empty suite **exercise 2 consulting libraries**
 
-2. Create a folder in the root named **exercise-2-consulting-libraries**
+2. Create a folder in the root named **02__exercise-consulting-libraries**
 
-3. In this folder, create file libraries.robot and copy the contents from here [libaries.robot](https://bitbucket.org/copado-robotic-testing/training-exercises/raw/582f5c6ce20adf223d58b2f12f3b97073e7f93c0/exercise-2-consulting-libraries/libraries.robot)
+3. In this folder, create file libraries.robot and copy the contents from here [libaries.robot](libraries.robot)
 
 4. Use Big Live Test button and run step by step test case Exercise 2 - Consulting Libraries
 
 # Explore and view the QWord Palette
 
-1. In the folder **exercise-2-consulting-libraries**, open file libraries.robot
+1. In the folder **02__exercise-consulting-libraries**, open file libraries.robot
 
 2. Check out the QWord Palette and identify libraries and keywords out of the box.
 
 # Links
+
+## CRT Libraries
 
 [All QWords Overview](https://docs.copado.com/articles/#!copado-robotic-testing-publication/all-qwords)
 
@@ -49,4 +51,22 @@ The purpose of this exercise is to learn how to find libraries and keywords. Use
 
 [QNow](https://docs.copado.com/resources/Storage/copado-robotic-testing-publication/CRT%20Site/qwords-reference/current/qwords/_attachments/QNow.html)
 
-[3rd Party Libraries](https://robotframework.org/?tab=builtin#resources)
+## Robot Framework Libraries
+
+[Robot Framework Libraries](https://robotframework.org/?tab=builtin#resources)
+
+[BuiltIn](https://robotframework.org/robotframework/latest/libraries/BuiltIn.html
+
+[Collections](https://robotframework.org/robotframework/latest/libraries/Collections.html
+
+[String](https://robotframework.org/robotframework/latest/libraries/String.html
+
+[DateTime](http://robotframework.org/robotframework/latest/libraries/DateTime.html
+
+[OperatingSystem](https://robotframework.org/robotframework/latest/libraries/OperatingSystem.html
+
+## 3rd Party Libraries
+
+[RequestsLibrary](https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html
+
+[FakerLibary](https://guykisel.github.io/robotframework-faker/

@@ -5,11 +5,18 @@ Library                         String
 Library                         Collections
 
 
+# *** Variables ***
+# ${browser}                      chrome
+# ${username}                     YOUR USERNAME HERE
+# ${login_url}                    https://YOURDOMAIN.my.salesforce.com                    # Salesforce instance. NOTE: Should be overwritten in CRT variables
+# ${home_url}                     ${login_url}/lightning/page/home
+
 *** Variables ***
 ${browser}                      chrome
-${username}                     YOUR USERNAME HERE
-${login_url}                    https://YOURDOMAIN.my.salesforce.com                    # Salesforce instance. NOTE: Should be overwritten in CRT variables
+${username}                     ea9mlm8la81a5l-pmcd@force.com
+${login_url}                    https://energy-force-4969.my.salesforce.com                    # Salesforce instance. NOTE: Should be overwritten in CRT variables
 ${home_url}                     ${login_url}/lightning/page/home
+${password}		      TrialSF01!
 
 
 *** Keywords ***
@@ -20,14 +27,12 @@ Setup Browser
     SetConfig                   DefaultTimeout              20s                         #sometimes salesforce is slow
 
 
-End suite
-    Set Library Search Order    QWeb                        QForce
+Close All Browser Sessions
     Close All Browsers
 
 
 Login
     [Documentation]             Login to Salesforce instance
-    Set Library Search Order    QWeb                        QForce
     GoTo                        ${login_url}
     TypeText                    Username                    ${username}                 delay=1
     TypeText                    Password                    ${password}
@@ -47,11 +52,29 @@ Login
     #     ClickText               Verify
     # END
 
+Login As
+    [Documentation]       Login As different persona. User needs to be logged into Salesforce with Admin rights
+    ...                   before calling this keyword to change persona.
+    ...                   Example:
+    ...                   LoginAs    Chatter Expert
+    [Arguments]           ${persona}
+    ClickText             Setup
+    ClickText             Setup for current app
+    SwitchWindow          NEW
+    TypeText              Search Setup                ${persona}             delay=2
+    ClickText             User                        anchor=${persona}      delay=3    # wait for list to populate, then click
+    VerifyText            Freeze                      
+    ClickText             Login                       anchor=Freeze          delay=1      
+
 Home
     [Documentation]             Navigate to homepage, login if needed
-    Set Library Search Order    QWeb                        QForce
     GoTo                        ${home_url}
     ${login_status} =           IsText                      To access this page, you have to log in to Salesforce.                  2
-    Run Keyword If              ${login_status}             Login
+    Run Keyword If              ${login_status}             Login                   
     ClickText                   Home
     VerifyTitle                 Home | Salesforce
+
+Sales
+    [Documentation]             Navigate to homepage, login if needed
+    LaunchApp                   Sales
+    VerifyText                  Sales
