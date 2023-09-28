@@ -6,6 +6,6 @@ Suite Teardown    Close All Browser Sessions
 
 *** Test Cases ***
 Exercise 8 - Multi Factor Authentication
-    [tags]        Lead                        Git Repo Exercise
+    [tags]        MFA
     Appstate      Home
     LaunchApp     Sales

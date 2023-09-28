@@ -1,0 +1,4 @@
+*** Test Cases ***;${label};${api_name};${type};${description};${field_label};${field_name};${data_type};${controlling_field};${indexed};[Tags];[Documentation]
+Account - Account Name;Account;Account;Standard Object;${EMPTY};Account Name;Name;Name;${EMPTY};True;tc01;doc
+Account - Account Name Sub;Account;Account;Standard Object;${EMPTY};Account Name;Name;Text(255);${EMPTY};False;tc02;doc
+Account - Account Number;Account;Account;Standard Object;${EMPTY};Account Number;AccountNumber;Text(40);${EMPTY};False;tc03;doc

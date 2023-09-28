@@ -1,0 +1,8 @@
+echo "********** create output folder **********"
+mkdir -p ./output/all
+
+echo "********** zip execution directory **********"
+zip -r assets.zip .
+
+echo "********** copy zip to output folder (downloadable via run result artifacts)  **********"
+cp assets.zip ./output/all

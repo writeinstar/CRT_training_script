@@ -5,8 +5,8 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 # Exercises
 
 1.  Getting started 
-2.  [Consulting libraries](02__exercise-consulting-libraries/)
-3.  Online Test Development
+2.  Online Test Development / Basics QEditor
+3.  [Consulting libraries](03__exercise-consulting-libraries/)
 4.  [Setup Salesforce Trail](04__exercise-setup-sf-trail/)
 5.  [Allowlist CRT IPs](05__exercise-allowlist-crt-ips/)
 6.  [Salesforce Testing](06__exercise-salesforce-testing/)
@@ -46,6 +46,7 @@ Welcome to our Bitbucket repo. Here you can find and read all the exercises used
 9.  [Image Comparions with QImage](24__examples/image-comparison)
 10.  [PDF Testing](24__examples/pdf)
 11. [Operating System](24__examples/operating-system)
+12. [Chrome Extensions](24__examples/chrome-extensions)
 
 ## Technologies
 

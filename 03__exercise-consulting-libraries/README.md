@@ -1,6 +1,6 @@
-# Exercise 2 - Consulting Libraries!
+# Exercise 3 - Consulting Libraries!
 
-Welcome to **Exercise 2**. Find out great assets you can put in your toolbox.
+Welcome to **Exercise 3**. Find out great assets you can put in your toolbox.
 
 # Purpose
 
@@ -19,17 +19,17 @@ The purpose of this exercise is to learn how to find libraries and keywords. Use
 
 # Know where to visit library keyword pages (bookmark them / add to favorites)
 
-1. Create a new empty suite **exercise 2 consulting libraries**
+1. Create a new empty suite **exercise 3 consulting libraries**
 
-2. Create a folder in the root named **02__exercise-consulting-libraries**
+2. Create a folder in the root named **03__exercise-consulting-libraries**
 
 3. In this folder, create file libraries.robot and copy the contents from here [libaries.robot](libraries.robot)
 
-4. Use Big Live Test button and run step by step test case Exercise 2 - Consulting Libraries
+4. Use Big Live Test button and run step by step test case Exercise 3 - Consulting Libraries
 
 # Explore and view the QWord Palette
 
-1. In the folder **02__exercise-consulting-libraries**, open file libraries.robot
+1. In the folder **03__exercise-consulting-libraries**, open file libraries.robot
 
 2. Check out the QWord Palette and identify libraries and keywords out of the box.
 
