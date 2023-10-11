@@ -18,7 +18,8 @@ The purpose of this exercise is to learn how data driven testing can be applied,
 - Create your Data Driven Test using Test Template
 - Prepare your CSV File with Test Data
 - Create your Data Driven Test using DataDriver 3rd party library
-- Using a template within a test case
+- Use a template within a test case
+- Use an alternately formatted CSV File
 - Two options you can use for Individual Test Debugging
 
 # Identify a candidate for Data Driven Testing
@@ -53,11 +54,17 @@ Let's start with a clearly descriptive data driven tests using Test Data interna
 
 2. Open file **datadriver-suite-test-template.robot** and run the test cases outside of live testing
 
-# Using a template within a test case
+# Use a template within a test case
 
 1. In folder **14__exercise-data-driven-testing**, create file test-case-test-template.robot and copy the contents from here [test-case-test-template.robot](test-case-test-template.robot)
 
 2. Open file **datadriver-suite-test-template.robot** and run the test cases outside of live testing
+
+# Use an alternately formatted CSV File
+
+1. In folder **14__exercise-data-driven-testing**, create file datadriver-alternate-csv-format.robot and copy the contents from here [datadriver-alternate-csv-format.robot](datadriver-alternate-csv-format.robot)
+
+2. In folder **14__exercise-data-driven-testing**, create file Leads.csv and copy the contents from here [Leads.csv](Leads.csv)
 
 # Two options you can use for Individual Test Debugging
 
