@@ -1,7 +1,7 @@
 *** Settings ***
 Resource                        ../resources/common.robot
 Resource                        ../resources/leads.robot
-Library                         DataDriver         reader_class=TestDataApi    name=Leads.csv   #include=tagtoinclude    exclude=tagtoexclude
+Library                         DataDriver         reader_class=TestDataApi    name=Leads.csv   include=alternate CSV    exclude=tagtoexclude
 Library                         FakerLibrary
 Suite Setup                     Setup Browser
 Test Setup                      Run Keywords                Home                        Unique Test Data
@@ -12,6 +12,7 @@ Test Template                   Create Verify and Delete Lead End to End
 
 *** Test Cases ***
 Exercise 14 - Data Driven Testing - Create Lead using Suite Test Template with ${lead_status} ${last_name} ${company} ${first_name} ${salutation}
+    [Tags]                    alternate CSV
 
 *** Keywords ***
 
