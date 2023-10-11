@@ -39,7 +39,7 @@ Let's start with a clearly descriptive data driven tests using Test Data interna
 
 1. In folder **14__exercise-data-driven-testing**, create file suite-test-template.robot and copy the contents from here [suite-test-template.robot](suite-test-template.robot)
 
-2. In foler **resources**, create file leads.robot and copy the contents from here [leads.robot](../resources/leads.robot)
+2. In folder **resources**, create file leads.robot and copy the contents from here [leads.robot](../resources/leads.robot)
 
 3. Open file **suite-test-template.robot** and run the test cases in live testing
 
