@@ -64,7 +64,24 @@ Let's start with a clearly descriptive data driven tests using Test Data interna
 
 1. In folder **14__exercise-data-driven-testing**, create file datadriver-alternate-csv-format.robot and copy the contents from here [datadriver-alternate-csv-format.robot](datadriver-alternate-csv-format.robot)
 
-2. In folder **14__exercise-data-driven-testing**, create file Leads.csv and copy the contents from here [Leads.csv](Leads.csv)
+2. On your desktop, create a new file Leads.csv and copy the contents from here [Leads.csv](Leads.csv)
+
+3. Navigate to suite **exercise 14 data driven testing** and locate the Test Data section in the top-right of the screen.
+
+4. Click "upload" and navigate through the next few prompts:
+
+    1. Choose your Leads.csv file
+
+    2. Click "Next"
+
+    3. Click "Send"
+
+    4. Click "Close"
+
+5. Under the Test Data section, select **Leads.csv**. Click "Save"
+
+6. Use Advanced Options to set the execution parameter --include for "alternate CSV", then click Run
+
 
 # Two options you can use for Individual Test Debugging
 
