@@ -31,7 +31,7 @@ The purpose of this exercise is to learn how data driven testing can be applied,
 
 4. Create a folder in root named **resources**
 
-5. In this foler, create file common.robot and copy the contents from here [common.robot](../resources/common.robot)
+5. In this folder, create file common.robot and copy the contents from here [common.robot](../resources/common.robot)
 
 # Create your Data Driven Test using Test Template
 
