@@ -30,7 +30,16 @@ The purpose of this exercise is to learn how to create and use variables in mult
 
 3. View Suite Variables and Execution Parameters
 
-4. Add variables here specific to your suite
+4. Add the following variables your suite:
+
+	a. UI_suite_only
+	
+	b. UI_suite_robot
+	
+	c. UI_suite_robot_project
+	
+5. Give each variable the value "This is a suite level value"
+
 
 ## Robot
 
