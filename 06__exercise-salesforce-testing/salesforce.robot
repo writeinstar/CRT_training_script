@@ -11,7 +11,9 @@ Exercise 6 - Entering A Lead Tina Smith
     Launch App                 Sales
 
     ClickText                 Leads
-    VerifyText                Recently Viewed             timeout=120s
+    VerifyText                Intelligence View          timeout=120s
+    ClickText                 List View                  anchor=New
+    VerifyText                Recently Viewed            timeout=120s
     ClickText                 New                        anchor=Import
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
