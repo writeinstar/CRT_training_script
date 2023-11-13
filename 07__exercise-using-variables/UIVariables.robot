@@ -3,12 +3,13 @@
 Exercise 7 - Test UI Level Variables
 
     Log To Console    \n
+    Log To Console    \n
     Log To Console    ---------------------------------------------------------------------------------------------
     Log To Console    Variables stored at project level are for general use
     Log To Console    \n
     Log To Console    UI_project_only value: ${UI_project_only}
-    Log To Console    \n
     Log To Console    ---------------------------------------------------------------------------------------------
+    Log To Console    \n
 
     Log To Console    ---------------------------------------------------------------------------------------------
     Log To Console    Variables stored at robot level are usually more specific
@@ -17,8 +18,8 @@ Exercise 7 - Test UI Level Variables
     Log To Console    \n
     Log To Console    UI_robot_only value   : ${UI_robot_only}
     Log To Console    UI_robot_project value: ${UI_robot_project}
-    Log To Console    \n
     Log To Console    ---------------------------------------------------------------------------------------------
+    Log To Console    \n
 
     Log To Console    ---------------------------------------------------------------------------------------------
     Log To Console    Variables stored at suite level are usually specifc to a use case
@@ -28,5 +29,5 @@ Exercise 7 - Test UI Level Variables
     Log To Console    UI_suite_only value         : ${UI_robot_only}
     Log To Console    UI_suite_robot value        : ${UI_robot_project}
     Log To Console    UI_suite_robot_project value: ${UI_suite_robot_project}
-    Log To Console    \n
     Log To Console    ---------------------------------------------------------------------------------------------
+    Log To Console    \n
