@@ -1,1 +1,1 @@
-echo "This was executed by the pace.after file"
+echo "This was executed by the pace.before file"
