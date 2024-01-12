@@ -37,7 +37,7 @@ Exercise 4 - Do it for me! Create online mailbox
 
 
 Exercise 4 - Create Salesforce Trial Org
-    GoTo                        https://www.salesforce.com/form/signup/freetrial-sales-pe/
+    GoTo                        https://www.salesforce.com/form/signup/sales/
 
     # Handle Cookie Popup
     ${cookies_popup_present}=                               IsText                      Accept All Cookies
@@ -46,7 +46,7 @@ Exercise 4 - Create Salesforce Trial Org
         ClickText               Accept All Cookies
     END
 
-    VerifyText                  Start your free sales trial
+    VerifyText                  Start your free trial today
 
     Evaluate                    random.seed()               random
     ${exampleFirstName}=        Convert To String           guest1
@@ -69,6 +69,13 @@ Exercise 4 - Create Salesforce Trial Org
     ClickElement                //div[@class\="checkbox-ui"]
 
     ClickText                   Submit
+    # Switch Window               NEW
+    ClickText                   Training and learning to use                        timeout=60s
+    ClickText                   Next
+    ClickText                   Managing my pipeline
+    ClickText                   Next
+    ClickText                Very familiar with Salesforce CRM software
+    ClickText                   Submit
 
     #                           Create robot variables with the login information from your mail and input
 
@@ -81,14 +88,14 @@ Exercise 4 - Create Salesforce Trial Org
 
 Exercise 4 - Do it for me! Read Mail, Verify Account and Set Password
     Switch Window               1
-    ${email_count}=             Get Text Count              Welcome to Salesforce
-    Log to Console              ${email_count}
-    IF                          '${email_count}' > '${0}'
-        Log to Console          I've found an existing mail, let's wait 180 sec for the new mail to arrive.
-        Sleep                   180
-    ELSE
-        ClickItemUntil          Welcome to Salesforce       GO                          timeout=180
-    END
+    # ${email_count}=             Get Text Count              Welcome to Salesforce
+    # Log to Console              ${email_count}
+    # IF                          '${email_count}' > '${0}'
+    #     Log to Console          I've found an existing mail, let's wait 180 sec for the new mail to arrive.
+    #     Sleep                   180
+    # ELSE
+        ClickItemUntil          Welcome to Salesforce       GO                          timeout=500
+    # END
     ClickText                   Welcome to Salesforce
     ScrollText                  Again, welcome to Salesforce
     ${sftrial_url}=             GetText                     login-href                  tag=a
@@ -130,7 +137,7 @@ Exercise 4 - Do it for me! Read Mail, Verify Account and Set Password
     TypeText                    Answer                      Krypton
     ClickText                   Change Password
     Log Many                    ${email_address}            ${sftrial_url}              ${sftrial_username}         ${password}
-    ClickText                   Close this window
+    # ClickText                   Close this window
     Set Global Variable         ${browser}                  chrome
     Set Global Variable         ${login_url}                ${sftrial_url}
     Set Global Variable         ${home_url}                 ${login_url}/lightning/page/home
@@ -218,6 +225,11 @@ Exercise 5 - Allowlist IPs at Setup Network Access
     Log To Console              ${username}
     Log To Console              ${password}
     Log to Console              ${mailinator_url}
+    Log                         ${login_url}
+    Log                         ${home_url}
+    Log                         ${username}
+    Log                         ${password}
+    Log                         ${mailinator_url}
 
 *** Keywords ***
 
