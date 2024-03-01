@@ -11,6 +11,10 @@ Exercise 14 - Data Driven Testing - Entering a Lead Tina Smith
     Launch App                 Sales
 
     ClickText                 Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                Recently Viewed             timeout=120s
     ClickText                 New                        anchor=Import
     VerifyText                Lead Information
@@ -37,6 +41,10 @@ Exercise 14 - Data Driven Testing - Entering a Lead Billy Parker
     Launch App                 Sales
 
     ClickText                 Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                Recently Viewed             timeout=120s
     ClickText                 New                        anchor=Import
     VerifyText                Lead Information
@@ -61,7 +69,10 @@ Exercise 14 - Data Driven Testing - Entering a Lead John Connor
     [tags]                    Lead
     Appstate                  Home
     Launch App                 Sales
-
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s
     ClickText                 New                        anchor=Import

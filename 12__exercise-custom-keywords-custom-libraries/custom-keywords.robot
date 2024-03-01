@@ -30,6 +30,10 @@ Exercise 12 - Custom Keywords - Step 2 Replace values with arguments
 Create Lead Step 1 Grouping
     Launch App                  Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s
     ClickText                   New                         anchor=Import
     VerifyText                  Lead Information
@@ -51,6 +55,10 @@ Create Lead Step 1 Grouping
 Verify Lead Step 1 Grouping
     Launch App                  Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s
     Wait Until Keyword Succeeds                             1 min                       5 sec                  ClickText                   Tina Smith 
     ClickText                   Details                     anchor=Activity
@@ -64,6 +72,10 @@ Verify Lead Step 1 Grouping
 Delete Lead Step 1 Grouping
     Launch App                  Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s  
     Wait Until Keyword Succeeds                             1 min                       5 sec                  ClickText                   Tina Smith
     ClickText                   Delete
@@ -79,6 +91,10 @@ Create Lead Step 2 Replace values with arguments
     [Arguments]                 ${lead_status}              ${last_name}                ${company}             ${salutation}=${EMPTY}      ${first_name}=${EMPTY}    ${phone}=${EMPTY}        ${title}=${EMPTY}           ${email}=${EMPTY}           ${website}=${EMPTY}         ${lead_source}=${EMPTY}
     Launch App                  Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s
     ClickText                   New                         anchor=Import
     VerifyText                  Lead Information
@@ -101,6 +117,10 @@ Verify Lead Step 2 Replace values with arguments
     [Arguments]                 ${lead_status}=${EMPTY}     ${last_name}=${EMPTY}       ${company}=${EMPTY}    ${salutation}=${EMPTY}      ${first_name}=${EMPTY}    ${phone}=${EMPTY}        ${title}=${EMPTY}           ${email}=${EMPTY}           ${website}=${EMPTY}         ${lead_source}=${EMPTY}
     Launch App                  Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s
     Wait Until Keyword Succeeds                             1 min                       5 sec                  ClickText                   ${first_name} ${last_name}
     ClickText                   Details                     anchor=Activity
@@ -116,6 +136,10 @@ Delete Lead Step 2 Replace values with arguments
     [Arguments]                 ${first_name}               ${last_name}
     Launch App                  Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s
     Wait Until Keyword Succeeds                             1 min                       5 sec                  ClickText                   ${first_name} ${last_name}
     ClickText                   Delete

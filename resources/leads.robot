@@ -6,6 +6,10 @@ Create Lead
     [Arguments]                 ${lead_status}              ${last_name}                ${company}             ${salutation}=${EMPTY}      ${first_name}=${EMPTY}    ${phone}=${EMPTY}           ${title}=${EMPTY}           ${email}=${EMPTY}           ${website}=${EMPTY}         ${lead_source}=${EMPTY}
     Launch App                  Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s
     ClickText                   New                         anchor=Import               delay=3s
     VerifyText                  Lead Information
@@ -29,6 +33,10 @@ Verify Lead
     [Arguments]                 ${lead_status}=${EMPTY}     ${last_name}=${EMPTY}       ${company}=${EMPTY}    ${salutation}=${EMPTY}      ${first_name}=${EMPTY}    ${phone}=${EMPTY}           ${title}=${EMPTY}           ${email}=${EMPTY}           ${website}=${EMPTY}         ${lead_source}=${EMPTY}
     Launch App                  Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s
     Wait Until Keyword Succeeds                             1 min                       5 sec                  ClickText                   ${first_name} ${last_name}
     ClickText                   Details                     anchor=Activity
@@ -46,6 +54,10 @@ Delete Lead
     [Arguments]                 ${first_name}               ${last_name}
     Launch App                  Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s
     Log Screenshot
     Wait Until Keyword Succeeds                             1 min                       5 sec                  ClickText                   ${first_name} ${last_name}

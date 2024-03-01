@@ -1,8 +1,8 @@
 *** Test Cases ***
 
 Exercise 7 - Test Keyword Variables and Scope 1
-    ${my_test_case_var}        Set Variable                Hello World
-    Log                    ${my_test_case_var}             # Pass: Logs the value of the variable
+    ${my_local_var}        Set Variable                Hello World
+    Log                    ${my_local_var}             # Pass: Logs the value of the variable
     Set Suite Variable     ${my_suite_var}             I'm a suite variable
     Set Global Variable    ${my_global_var}            I'm a global variable
 

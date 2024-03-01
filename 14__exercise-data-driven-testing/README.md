@@ -82,9 +82,7 @@ Let's start with a clearly descriptive data driven tests using Test Data interna
 
 6. Use Advanced Options to set the execution parameter --include for "alternate CSV", then click Run
 
-
 # Two options you can use for Individual Test Debugging
 
-1. For **datadriver-suite-test-template.robot** assign a tag to the test case
-
-2. Upload the CSV file, select a row and click live test.
+1. Comment Test Template and Add ***variables***
+2. Select Uploaded file and select a row and debug

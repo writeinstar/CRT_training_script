@@ -30,16 +30,7 @@ The purpose of this exercise is to learn how to create and use variables in mult
 
 3. View Suite Variables and Execution Parameters
 
-4. Add the following variables to your suite:
-
-	a. UI_suite_only
-	
-	b. UI_suite_robot
-	
-	c. UI_suite_robot_project
-	
-5. Give each variable the value "This is a suite level value"
-
+4. Add variables here specific to your suite
 
 ## Robot
 
@@ -47,19 +38,7 @@ The purpose of this exercise is to learn how to create and use variables in mult
 
 2. View Robot Variables and Execution Parameters
 
-3. Add variables here specific to an environment / robot. (This may be done from Exercise 04) These variables can be accessed by all suites under the robot
-
-4. Add the following variables to your robot:
-
-    a. UI_robot_only
-
-	b. UI_robot_project
-
-	c. UI_suite_robot
-
-	d. UI_suite_robot_project
-
-5. Give each variable from Step 4 the value "This is a robot level value"
+3. Add variables here specific to an environment / robot. These variables can be accessed by all suites under the robot
 
 > **Note:** We recommend to create seperate robots for each environment. Considering environment specific report capabilities and dashboards.
 
@@ -69,35 +48,13 @@ The purpose of this exercise is to learn how to create and use variables in mult
 
 2. View Project Variables and Execution Parameters
 
-3. Add variables here for the entire project. These variables can be accessed by robots and suites in the project.
-
-    a. UI_project_only
-
-	b. UI_robot_project
-
-	c. UI_suite_robot_project
-
-4. Give each variable from Step 3 the value "This is a project level value"
-
-# Use Variables that were set on the CRT UI
-
-1. Open empty suite **exercise 7 using variables**
-
-2. Create a folder in the root named **07__exercise-using-variables**
-
-3. In this folder, create file ui-variables.robot and copy the contents from here [ui-variables.robot](ui-variables.robot)
-
-4. Click **Execute** button displayed just above the test case name **Variables Section**
-
-5. Exit QEditor and locate your test execution
-
-6. Open the **Execution Logs** in the top right of **Suite Run Results** to see your UI variables in action!
+3. Add variables here specific to an project, or robot. These variables can be accessed by robots and suites in the project.
 
 # Set variables using the Variables section
 
 1. Open empty suite **exercise 7 using variables**
 
-2. Open folder in the root named **07__exercise-using-variables**
+2. Create a folder in the root named **07__exercise-using-variables**
 
 3. In this folder, create file variable-files.robot and copy the contents from here [variables-section.robot](variables-section.robot)
 

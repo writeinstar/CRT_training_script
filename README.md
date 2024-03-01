@@ -2,7 +2,7 @@
 
 Welcome to our Bitbucket repo. Here you can find and read all the exercises used througout your training. Including example test files ready to be copied.
 
-# Exercises
+# Exercisesaaa
 
 1.  Getting started 
 2.  Online Test Development / Basics QEditor

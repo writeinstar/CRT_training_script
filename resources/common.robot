@@ -109,3 +109,44 @@ Sales
     [Documentation]             Navigate to homepage, login if needed
     LaunchApp                   Sales
     VerifyText                  Sales
+
+
+Custom Login
+    [Arguments]           	${loginUrl}=${EMPTY}  ${BROWSER}=chrome  ${ORG_USERNAME}=${EMPTY}  ${ORG_PASSWORD}=${EMPTY}  ${MFA_SECRET}=${EMPTY}
+    [Documentation]         This generic login keyword can be used to login from within test files. Mainly for test files to determine how to login for a specific test scenario.
+    ...                     - option1: CI/CD: login directly using loginUrl of the source/destination org using sysadmin credential. Ideal for deployment tasks and login as persona.  
+    ...                     - option2: CI/CD: login using loginUrl of the source/destination org but using any orgUsername, orgPassword, mfa_secret (not using sysadmin credential)
+    ...                     - option3: CRT: login with local loginUrl, orgUsername and orgPassword for any user
+    ${DYNAMIC_LOGIN}=       Get Variable Value          ${loginUrl}                 NoValuePassed
+    IF                      '${DYNAMIC_LOGIN}' != 'NoValuePassed'
+        IF    "${orgUsername}" == "${EMPTY}" and "${orgPassword}" == "${EMPTY}"
+            # option 1
+            Open Browser                ${DYNAMIC_LOGIN}                ${BROWSER}
+        ELSE
+            # option 2
+            ${parts}=                   Split String      ${DYNAMIC_LOGIN}          # e.g. ${DYNAMIC_LOGIN} = 'https://xxxxx.sandbox.xxx.xxxxx.com/more/more/token
+            ${base_url}=                Set Variable      ${parts[0]}//${parts[2]}  # e.g. ${parts} = ['https:', '', 'xxxxx.sandbox.xxx.xxxxx.com', 'more', 'more', '']
+            Open Browser                ${base_url}       ${BROWSER}
+            TypeText                    Username                    ${ORG_USERNAME}
+            TypeSecret                  Password                    ${ORG_PASSWORD}
+            ClickText                   Log In        
+            ${MFA_needed}=              Run Keyword And Return Status                           Should Not Be Equal         ${None}         ${MY_SECRET}
+            IF                          ${MFA_needed}
+                ${mfa_code}=            GetOTP                      ${username}                 ${MY_SECRET}
+                TypeSecret              Verification Code           ${mfa_code}
+                ClickText               Verify
+            END               
+        END
+    ELSE
+        # option3
+        Open Browser                ${base_url}       ${BROWSER}
+        TypeText                    Username                    ${ORG_USERNAME}
+            TypeSecret                  Password                    ${ORG_PASSWORD}
+            ClickText                   Log In        
+            ${MFA_needed}=              Run Keyword And Return Status                           Should Not Be Equal         ${None}         ${MY_SECRET}
+            IF                          ${MFA_needed}
+                ${mfa_code}=            GetOTP                      ${username}                 ${MY_SECRET}
+                TypeSecret              Verification Code           ${mfa_code}
+                ClickText               Verify
+            END               
+    END

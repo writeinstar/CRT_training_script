@@ -28,6 +28,10 @@ Exercise 10 - Overridden Test Teardown doing nothing
 Create Lead
     Launch App                  Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s
 
     ClickText                   New                         anchor=Import
@@ -61,6 +65,10 @@ Create Lead
 Delete Lead
     LaunchApp                   Sales
     ClickText                   Leads
+    ${standard_active}=         IsText                      Recently Viewed             timeout=5s             delay=2s
+    IF                          "${standard_active}"=="False"
+        ClickText               List View
+    END
     VerifyText                  Recently Viewed             timeout=120s
 
     Wait Until Keyword Succeeds                             1 min                       5 sec                  ClickText      Tina Smith
