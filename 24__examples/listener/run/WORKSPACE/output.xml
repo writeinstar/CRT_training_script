@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.8.9 on win32)" generated="20240122 14:34:09.169" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="C:\Users\jbeaumon\Documents\sandbox\tests">
+<suite id="s1-s1" name="Q1 Perf Sample" source="C:\Users\jbeaumon\Documents\sandbox\tests\q1_perf_sample.robot">
+<test id="s1-s1-t1" name="Cas de test avec monitoring du temps d'execution unitaire" line="9">
+<kw name="S'authentifier">
+<doc>Keyword dont il faut alerter sur le temps d'exécution</doc>
+<msg timestamp="20240122 14:34:10.527" level="TRACE">Arguments: [  ]</msg>
+<kw name="Logon">
+<tag>Q1_PERF</tag>
+<doc>Keyword dont il faut alerter sur le temps d'exécution</doc>
+<msg timestamp="20240122 14:34:10.547" level="INFO">Found 3 perf data for keyword:'.Logon', mean=5033.0, std=11.0, set timeout to 5055.0 ms</msg>
+<msg timestamp="20240122 14:34:10.548" level="INFO">${Q1_PERF_TIMEOUT} = 5055.0 ms</msg>
+<msg timestamp="20240122 14:34:10.548" level="TRACE">Arguments: [  ]</msg>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240122 14:34:10.549" level="TRACE">Arguments: [ '6s' ]</msg>
+<msg timestamp="20240122 14:34:10.549" level="DEBUG">Keyword timeout 5 seconds 55 milliseconds active. 5.054 seconds left.</msg>
+<msg timestamp="20240122 14:34:15.635" level="FAIL">Keyword timeout 5 seconds 55 milliseconds exceeded.</msg>
+<status status="FAIL" starttime="20240122 14:34:10.549" endtime="20240122 14:34:15.635"/>
+</kw>
+<timeout value="5 seconds 55 milliseconds"/>
+<status status="FAIL" starttime="20240122 14:34:10.527" endtime="20240122 14:34:15.635"/>
+</kw>
+<status status="FAIL" starttime="20240122 14:34:10.527" endtime="20240122 14:34:15.635"/>
+</kw>
+<doc>Cas de test  d'attente pour simuler un comportement</doc>
+<tag>TNR</tag>
+<status status="FAIL" starttime="20240122 14:34:10.525" endtime="20240122 14:34:15.638">Keyword timeout 5 seconds 55 milliseconds exceeded.</status>
+</test>
+<doc>Example de prise de mesure et d'alerte sur depassement d'un temps de test
+construction d'un cas de test de perf unitaire dynamique</doc>
+<status status="FAIL" starttime="20240122 14:34:09.200" endtime="20240122 14:34:15.641"/>
+</suite>
+<status status="FAIL" starttime="20240122 14:34:09.172" endtime="20240122 14:34:15.643"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">TNR</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Q1 Perf Sample">Tests.Q1 Perf Sample</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
