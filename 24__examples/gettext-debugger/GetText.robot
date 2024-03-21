@@ -1,6 +1,7 @@
 *** Settings ***
 Resource                ../../resources/common.robot
 Resource                ../../resources/leads.robot
+Library                 QVision
 Suite Setup             Setup Browser
 Suite Teardown          Close All Browser Sessions
 
@@ -20,13 +21,14 @@ This strategy requires the use of either xpath or html attributes to identify ht
 https://docs.copado.com/resources/Storage/copado-robotic-testing-publication/CRT%20Site/qwords-reference/current/qwords/_attachments/QForce.html#Get%20Field%20Value
 This stratgey is a simplified way to capture text, but relies on Salesforce's standard for page layouts
 
-- Capturing a temporary element
-This strategy will utilize QWeb's GetText to capture text as the first example would.
-However, it also addresses the programming challenges involved with finding xpath for a temporary element.
+- Capturing a temporary element with debugger and QVision
+This strategy will utilize QVision's GetText to capture text using a unique piece of the text being targeted.
+This will also show how the screen can be paused to give the tester more time to inspect a temporary element.
 
 
 *** Test Cases ***
 Generic Text Capture using GetText
+    Set Library Search Order    QForce    QWeb    QVision
     Home
     VerifyText          Seller Home
 
@@ -70,17 +72,26 @@ Generic Text Capture using GetText
     Log To Console      ${Company_Name}
 
 Leveraging QForce's GetFieldValue Keyword
+    Home
+    ClickText    Leads
+    ClickText    Tina Smith
+    
     #For Salesforce record fields specifically, we can simplify the above solution into the following keyword:
     ${Company_Name_Alternate}=    GetFieldValue    Company
     Log To Console      ${Company_Name_Alternate}
 
 Pausing the screen on to gather the xpath of a temporary element
-    #For temporary elements such as confirmation banners, you can pause the webpage.
+    #For temporary elements such as confirmation banners, you can pause the webpage for investigation
     # 1) Open the inspect window in Chrome
-    # 2) Go to the console tab
+    # 2) Navigate to the console tab
     # 3) Type in this command-> debugger;
     # 4) Do not enter the command yet
     # 5) Trigger the temporary element to appear on screen
     # 6) Strike enter on the debugger; command
+    # 8) When you find your xpath or target text, you can close the inspect window to unpause the screen
 
+    Home
     Create Lead    New    Joe    Growmore
+    #The banner appears on save, pause here
+
+    ${BannerText}=        QVision.GetText     was created.   
