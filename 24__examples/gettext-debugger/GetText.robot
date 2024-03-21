@@ -2,8 +2,6 @@
 Resource                ../../resources/common.robot
 Suite Setup             Setup Browser
 Suite Teardown          Close All Browser Sessions
-Test Setup              Home
-Test Teardown           Home
 
 *** Comments ***
 This file was built to address questions around capturing screen elements.
@@ -28,6 +26,7 @@ However, it also addresses the programming challenges involved with finding xpat
 
 *** Test Cases ***
 Generic Text Capture using GetText
+    Home
     VerifyText          Seller Home
 
     #Grabbing the App Title by a attribute-based xpath.
@@ -62,7 +61,7 @@ Generic Text Capture using GetText
     #From the point of divergence, we go down one element (/dd) into the tree 
     #containing the field's value "Growmore"
     ${Company_Name_Tree}=    GetText                     //*[contains(text(),"Company")]/../../../dd
-    Log To Console      ${Company_Name}
+    Log To Console      ${Company_Name_Tree}
     #Notice that the GetText captured ALL text in this element tree.
 
     #Now we can travel down the html to the field value we want
