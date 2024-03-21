@@ -1,5 +1,6 @@
 *** Settings ***
 Resource                ../../resources/common.robot
+Resource                ../../resources/leads.robot
 Suite Setup             Setup Browser
 Suite Teardown          Close All Browser Sessions
 
@@ -65,5 +66,21 @@ Generic Text Capture using GetText
     #Notice that the GetText captured ALL text in this element tree.
 
     #Now we can travel down the html to the field value we want
-    ${Company_Name}=    GetText                        //*[contains(text(),"Company")]/../../../dd//*[@name\="outputField"]                    
+    ${Company_Name}=    GetText                        //*[contains(text(),"Company")]/../../../dd/div/span                 
+    Log To Console      ${Company_Name}
 
+Leveraging QForce's GetFieldValue Keyword
+    #For Salesforce record fields specifically, we can simplify the above solution into the following keyword:
+    ${Company_Name_Alternate}=    GetFieldValue    Company
+    Log To Console      ${Company_Name_Alternate}
+
+Pausing the screen on to gather the xpath of a temporary element
+    #For temporary elements such as confirmation banners, you can pause the webpage.
+    # 1) Open the inspect window in Chrome
+    # 2) Go to the console tab
+    # 3) Type in this command-> debugger;
+    # 4) Do not enter the command yet
+    # 5) Trigger the temporary element to appear on screen
+    # 6) Strike enter on the debugger; command
+
+    Create Lead    New    Joe    Growmore
