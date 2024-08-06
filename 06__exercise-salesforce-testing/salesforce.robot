@@ -6,7 +6,7 @@ Suite Teardown                Close All Browser Sessions
 
 *** Test Cases ***
 Exercise 6 - Entering A Lead Tina Smith
-    [tags]                    Lead
+    [tags]                    Lead   #Tags
     Appstate                  Home
     Launch App                 Sales
 
