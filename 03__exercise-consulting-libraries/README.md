@@ -1,6 +1,6 @@
 # Exercise 3 - Consulting Libraries!
 
-Welcome to **Exercise 3**. Find out great assets you can put in your toolbox.b
+Welcome to **Exercise 3**. Find out great assets you can put in your toolbox.c
 
 # Purpose
 
